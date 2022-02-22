@@ -69,35 +69,7 @@ body {
     background-color: #fff;
 }
 body > div > form > div.login-title > img{
-    -webkit-text-size-adjust: 100%;
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #868e96;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #868e96;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Helvetica Neue" , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol";
-    --font-family-monospace: "SFMono-Regular" , Menlo , Monaco , Consolas , "Liberation Mono" , "Courier New" , monospace;
+    
     font-weight: 400;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -117,35 +89,8 @@ body > div > form > div.login-title > img{
     top: -8px;
 }
 body > div{
-    -webkit-text-size-adjust: 100%;
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #868e96;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #868e96;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Helvetica Neue" , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol";
-    --font-family-monospace: "SFMono-Regular" , Menlo , Monaco , Consolas , "Liberation Mono" , "Courier New" , monospace;
+    padding-top: 100px;
+    width: 600px;
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
@@ -160,38 +105,10 @@ body > div{
     overflow-y: auto;
     border-top: none;
     border-bottom: none;
-    max-height: 524px;
+    max-height: 700px;
 }
 body > div > form{
-    -webkit-text-size-adjust: 100%;
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #868e96;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #868e96;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Helvetica Neue" , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol";
-    --font-family-monospace: "SFMono-Regular" , Menlo , Monaco , Consolas , "Liberation Mono" , "Courier New" , monospace;
+    
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
@@ -203,35 +120,7 @@ body > div > form{
     box-sizing: border-box;
 }
 body > div > form > div.login-title{
-    -webkit-text-size-adjust: 100%;
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #868e96;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #868e96;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Helvetica Neue" , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol";
-    --font-family-monospace: "SFMono-Regular" , Menlo , Monaco , Consolas , "Liberation Mono" , "Courier New" , monospace;
+    
     font-weight: 400;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -244,35 +133,7 @@ body > div > form > div.login-title{
     text-align: center;
 }
 body > div > form > div.login-title > b{
-    -webkit-text-size-adjust: 100%;
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #868e96;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #868e96;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Helvetica Neue" , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol";
-    --font-family-monospace: "SFMono-Regular" , Menlo , Monaco , Consolas , "Liberation Mono" , "Courier New" , monospace;
+    
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: Roboto, sans-serif;
@@ -284,35 +145,7 @@ body > div > form > div.login-title > b{
     font-weight: bolder;
 }
 body > div > form > div:nth-child(2){
-    -webkit-text-size-adjust: 100%;
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #868e96;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #868e96;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Helvetica Neue" , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol";
-    --font-family-monospace: "SFMono-Regular" , Menlo , Monaco , Consolas , "Liberation Mono" , "Courier New" , monospace;
+    
     font-weight: 400;
     text-align: left;
     -webkit-font-smoothing: antialiased;
@@ -331,35 +164,7 @@ body > div > form > div:nth-child(2){
     cursor: auto;
 }
 body > div > form > div:nth-child(2) > label{
-    -webkit-text-size-adjust: 100%;
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #868e96;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #868e96;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Helvetica Neue" , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol";
-    --font-family-monospace: "SFMono-Regular" , Menlo , Monaco , Consolas , "Liberation Mono" , "Courier New" , monospace;
+    
     font-weight: 400;
     text-align: left;
     -webkit-font-smoothing: antialiased;
@@ -382,35 +187,7 @@ body > div > form > div:nth-child(2) > label{
     color: rgba(0, 0, 0, 0.3);
 }
 #user-email{
-    -webkit-text-size-adjust: 100%;
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #868e96;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #868e96;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Helvetica Neue" , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol";
-    --font-family-monospace: "SFMono-Regular" , Menlo , Monaco , Consolas , "Liberation Mono" , "Courier New" , monospace;
+    
     -webkit-font-smoothing: antialiased;
     margin: 0;
     overflow: visible;
@@ -432,35 +209,7 @@ body > div > form > div:nth-child(2) > label{
     margin-top: 14px;
 }
 body > div > form > div:nth-child(2) > div:nth-child(3) > hr:nth-child(1){
-    -webkit-text-size-adjust: 100%;
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #868e96;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #868e96;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Helvetica Neue" , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol";
-    --font-family-monospace: "SFMono-Regular" , Menlo , Monaco , Consolas , "Liberation Mono" , "Courier New" , monospace;
+    
     font-weight: 400;
     text-align: left;
     -webkit-font-smoothing: antialiased;
@@ -472,7 +221,7 @@ body > div > form > div:nth-child(2) > div:nth-child(3) > hr:nth-child(1){
     cursor: auto;
     box-sizing: border-box;
 }
-body > div > form > div:nth-child(2) > label{
+*{
     -webkit-text-size-adjust: 100%;
     --blue: #007bff;
     --indigo: #6610f2;
@@ -502,25 +251,47 @@ body > div > form > div:nth-child(2) > label{
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system , BlinkMacSystemFont , "Segoe UI" , Roboto , "Helvetica Neue" , Arial , sans-serif , "Apple Color Emoji" , "Segoe UI Emoji" , "Segoe UI Symbol";
     --font-family-monospace: "SFMono-Regular" , Menlo , Monaco , Consolas , "Liberation Mono" , "Courier New" , monospace;
-    font-weight: 400;
-    text-align: left;
-    -webkit-font-smoothing: antialiased;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Roboto, sans-serif;
-    cursor: auto;
-    height: 0;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+div,input{
+    display: block;
+    margin: auto;
+}
+body > div > form > div.text-center > button{
+    display: block;
+    box-sizing: border-box;
+    touch-action: manipulation;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
     overflow: visible;
-    border: 0;
-    border-top: none rgb(224, 224, 224);
-    border-left: none rgb(224, 224, 224);
-    border-right: none rgb(224, 224, 224);
-    border-bottom: 1px solid rgb(224, 224, 224);
-    bottom: 8px;
-    box-sizing: content-box;
-    margin: 0px;
-    position: absolute;
-    width: 100%;
+    text-transform: none;
+    outline: none!important;
+    -webkit-appearance: button;
+    border-radius: 4px;
+    background-color: #0ebaba;
+    color: #fff;
+    box-shadow: none!important;
+    min-width: 94px;
+    min-height: 36px;
+    border: none;
+    height: 35px;
+    width: 120px;
+}
+body > div > div > a{
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    box-sizing: border-box;
+    background-color: transparent;
+    touch-action: manipulation;
+    color: #0ebaba!important;
+    padding-left: 5%;
+    font-size: 15px;
+    text-decoration: none;
 }
