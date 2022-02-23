@@ -4,10 +4,6 @@ let email=document.querySelector("#user-email");
 let pass=document.querySelector("#password-login");
 let validEmail=false;
 let validPassword=false;
-<<<<<<< Updated upstream
-form.addEventListener("submit",loginFunction);
-function loginFunction(event){
-=======
 let validEmailFormate=false;
 
 let lable1=document.querySelector("#lable1");
@@ -48,7 +44,6 @@ pass.addEventListener("input",function(){
 img.addEventListener("click",function(){
     window.location.href="index.html";
 });
-      
 
 
 
@@ -61,8 +56,14 @@ img.addEventListener("click",function(){
 
 form.addEventListener("submit",loginFunction2);
 function loginFunction2(event){
->>>>>>> Stashed changes
     event.preventDefault();
+    if(validEmailFormate){
+        loginFunction();
+    }
+}
+
+
+function loginFunction(){
     userLoginDataRevv.map(function(elem){
         console.log(elem.email,"entered",email.value)
         if(elem.email==email.value){
