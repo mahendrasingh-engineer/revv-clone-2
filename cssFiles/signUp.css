@@ -1,6 +1,6 @@
 body > div{
     font-weight: 400;
-    width: 600px;
+    width: 350px;
     margin: auto;
     line-height: 1;
     text-align: left;
@@ -16,6 +16,24 @@ body > div{
     border-top: none;
     border-bottom: none;
     max-height: 524px;
+}
+body > div > div.sign-up-title > img{
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-style: none;
+    opacity: 1;
+    width: 9%;
+    display: table-caption;
+    position: absolute;
+    right: -8px;
+    top: -8px;
 }
 body > div > div.sign-up-title{
     font-weight: 400;
@@ -40,24 +58,7 @@ body > div > div.sign-up-title > b{
     box-sizing: border-box;
     font-weight: bolder;
 }
-body > div > div.sign-up-title > img{
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: Roboto, sans-serif;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.6);
-    text-align: center;
-    box-sizing: border-box;
-    vertical-align: middle;
-    border-style: none;
-    opacity: 1;
-    width: 9%;
-    display: table-caption;
-    position: absolute;
-    right: -8px;
-    top: -8px;
-}
+
 body > div > div:nth-child(3){
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -186,9 +187,20 @@ body > div > div.text-center.mr-t-12 > button{
     margin: auto;
 }
 
-
-
-
+body > div > div:nth-child(4) > div > div > img,#undefined-Pleaseenteryouremail-EmailID-50932,body > div > div:nth-child(5) > div,body > div > div:nth-child(5) > div > div:nth-child(2),body > div > div:nth-child(5) > div{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+body > div > div:nth-child(5){
+    display: flex;
+    justify-content: space-around;
+}
+body > div > div:nth-child(5) > div > label{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
 
 
 
