@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
       text-align: center;
+      margin: 0;
+      padding: 0;
 }
 
 #topNav{
@@ -15,7 +17,6 @@
      border-left: 0;
      border-right: 0;
      background-color: white;
-     margin-top: -8px;
      position: sticky;
      top: 0px;
     
@@ -227,7 +228,7 @@
       display: flex;
       justify-content: left;
       align-items: center;
-      margin-top: -12px;
+      margin-top: 16px;
       margin-left: 5px;
 }
 #timeSt>h2{
@@ -241,7 +242,7 @@
       color: rgb(0, 0, 0);
       font-family: 'poppins';
       font-weight: lighter;
-      font-size: 14px;
+      font-size: 13px;
       margin-right: 16px;
 }
 
@@ -253,7 +254,7 @@
      height: 60px;
      align-items: flex-end;
      margin-bottom: 5px;
-     margin-top: 10px;
+     margin-top: 30px;
 }
 #filterBlog
 {
@@ -350,6 +351,7 @@
       margin-left: 55px;
       font-size: 13px;
       color: #808080;
+      margin-top: 10px;
       font-family: 'poppins';
 
 }
@@ -399,29 +401,30 @@
 }
 #segmentDiv>div:nth-child(3)
 {
-      margin-top: -8px;
+      margin-top: 5px;
 }
 #segmentDiv>div:nth-child(4)
 {
-      margin-top: -8px;
+      margin-top: 5px;
 }
 #segmentDiv>div:nth-child(5)
 {
-      margin-top: -8px;
+      margin-top: 5px;
 }
 #segmentDiv>div:nth-child(6)
 {
-      margin-top: -8px;
+      margin-top: 5px;
 }
 #segmentDiv>div:nth-child(7)
 {
-      margin-top: -8px;
+      margin-top: 5px;
 }
 #segTitle{
       
       text-align: left;
       margin-left: 40px;
-      margin-bottom: -14px;
+      margin-bottom: -10px;
+      margin-top: 5px;
       font-size: 17px;
       color: #000000de;
       font-family: 'poppins';
@@ -434,7 +437,7 @@
 #container{
    display: grid;
    grid-template-columns: repeat(3,316px);
-   grid-template-rows: repeat(11,395px);
+   grid-template-rows: repeat(11,auto);
    gap: 16px;
    width: 75%;
    
@@ -449,6 +452,7 @@
 h4{
       font-size: 17px;
       color: #000000DE;
+      margin-top: 10px;
       font-family: sans-serif;
 }
 #carImage{
@@ -485,45 +489,285 @@ h4{
       display: flex;
       justify-content: space-around;
       align-items: center;
+      margin-top: 15px;
       
 }
 #PriceMain>div{
       background-color: #ffffff;
       width: 33%;
+      height: 50px;
 }
 .charge{
       display: flex;
       justify-content: space-around;
       background-color:#ffffff;
-      
+      height: 55px;
 }
 
-.priceRange{
-      line-height: 13px;     
-}
 .priceRange>p{
       font-family: Roboto,sans-serif;
       font-weight: 600;
       color: #0EBABA;
+      margin-top: 5px;
 }
 #kmsPTag{
       color: #0EBABA;
       font-size: 9px; 
+      margin-top: 7px;
 }
 
 .charge>button{
-      padding: 6px 12px;
       background-color: #0EBABA;
       border: none;
       color: #ffffff;
       font-family: Roboto,sans-serif;
       font-size: 15px;
+      height: 35px;
+      width: 100px;
+      margin-top: 10px;
       border-radius: 10px;
+      
 }
 .charge>p{
       font-family: Roboto,sans-serif;
       font-size: 13px;
+      display: flex;
+      align-items: center;
       
 }
 
+/* for creating find car by text blog */
 
+#carTextContainer{
+      width: 96%;
+      height: 300px;
+      margin-top: 10px;
+}
+#carTextContainer>div{
+      margin-left: 350px;
+      
+}
+#textTwo,#textOne,#textThree{
+      width: 100%;
+      text-align: left;
+      text-align: justify;
+
+}
+#carTextContainer>div h2
+{
+      text-align: left;
+      font-size: 18px;
+      margin-top: 7px;
+      margin-bottom: 10px;
+      font-family: 'poppins';
+}
+#textTwo a{
+      text-decoration: none;
+      color: #5D5E6F;
+      font-size: 14px;
+      font-family: 'poppins';
+}
+#textOne a{
+      text-decoration: none;
+      color: #5D5E6F;
+      font-size: 14px;
+      font-family: 'poppins';
+}
+#textThree a{
+      text-decoration: none;
+      color: #5D5E6F;
+      font-size: 14px;
+      font-family: 'poppins';
+}
+
+ 
+/* first foter creation */
+
+#firstFoter{
+      width: 100%;
+      height: 270px;
+      background-color: #545a68ed;
+      padding-top: 20px;
+}
+
+#cityService
+{
+      display: flex;
+        width: 100%;
+      justify-content: space-around;
+
+}
+#cityService a{
+      text-decoration: none;
+      color: #FFFF;
+      font-size: 13px;
+      font-family: 'poppins';
+}
+#cityService>div a:hover{
+      color: #0EBABA;
+}
+#cityService p{
+      text-align: left;
+      text-align: justify;
+      margin-top: 0px;
+}
+#cityService>div{
+      margin-top: 15px;
+      padding-top: 60px;
+}
+#firstFoter>h4{
+      text-align: left;
+      margin-bottom: -50px;
+      font-weight: bold;
+      padding-left: 130px;
+      font-family: 'poppins';
+      font-size: 28px;
+      color: #FFFF;
+}
+
+/* middle fotter creation */
+
+#midFoter{
+      width: 100%;
+      height: 270px;
+}
+#midDivFot
+{
+      width: 100%;
+      display: flex;
+      margin: auto;
+      height: 100%;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #494E5A;
+
+      
+}
+#midDivFot>div:nth-child(1){
+      width: 30%;
+      height: 80%;
+      text-align: left;
+}
+#midDivFot>div:nth-child(2){
+      width: 20%;
+      height: 80%;
+}
+#midDivFot>div:nth-child(3){
+      width: 30%;
+      height: 80%;
+}
+
+#firstDiv li{
+      list-style: none;
+      
+}
+#firstDiv ul{
+      display: flex;
+      margin-top: 10px;
+      margin-left: 50px;
+
+}
+#firstDiv ul a{
+      margin-right: 5px;
+      
+}
+#firstDiv i{
+      font-size:28px;
+      width: 40px;
+      height: 35px;
+      padding-top: 5px;
+      border-radius: 50px;
+      background-color:#0EBABA;
+      color: #ffff;
+} 
+#firstDiv>img{
+      width: 105px;
+      height: 75px;
+      margin-left: 50px;
+      margin-top: 20px;
+}
+#secondDiv li{
+      list-style: none;
+
+}
+#secondDiv>li:first-child{
+      margin-top: 20px;
+}
+#secondDiv a{
+      text-decoration: none;
+      color: #FFF;
+      font-family: 'poppins';
+      font-size: 17px;
+      
+}
+#secondDiv a:hover{
+      color: #0EBABA;
+}
+#secondDiv li{
+      text-align: justify;
+      margin-left: 80px;
+}
+#thirdDiv{
+      margin-top: 15px;
+}
+#h3,#h4{
+      color: #FFF;
+      font-family: 'poppins';  
+      text-align: justify;
+      margin-left: 40px;
+}
+#h4{
+      font-weight: lighter;
+}
+#h2{
+      color: #0EBABA;
+      font-family: 'poppins';  
+      text-align: justify;
+      margin-left: 40px;
+}
+#contact{
+      color: #0EBABA;
+      font-family: 'poppins';  
+      text-align: justify;
+      margin-left: 40px;  
+}
+#contact:hover
+{
+      text-decoration: underline;
+}
+#pLine{
+      text-align: left;
+      margin-top: -35px;
+      margin-left: 95px;
+      color: #fff;
+      font-size: 10px;
+      font-family: 'poppins';
+}
+
+/* last text foter creation */
+#lastTextFoter{
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+}
+#lastTextFoter p,.lastH2{
+      text-align: left;
+      text-align: justify;
+      margin-left: 120px;
+      font-family: 'poppins';
+      margin-right: 10px;
+}
+#lastTextFoter p{
+     font-size: 14px;
+      margin-right: 100px;
+      margin-top: 10px;
+}
+.lastH2{
+      font-size: 18px;
+      font-weight: 500;
+      color: #1b1c24;   
+}
+b{
+      font-weight: bolder;
+}

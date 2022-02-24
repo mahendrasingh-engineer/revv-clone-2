@@ -1,11 +1,12 @@
 var cars = JSON.parse(localStorage.getItem("carDataBase"));
 
+  console.log(cars[2]);   
 console.log(cars);
 
 function displayCar(cars)
 {
       document.getElementById("container").innerHTML="";
-    cars.map(function (ele) {
+      cars.map(function (ele) {
        
         var mainDiv = document.createElement("div");
 
