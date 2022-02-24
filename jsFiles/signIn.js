@@ -1,6 +1,6 @@
 var form=document.querySelector("form");
 let userLoginDataRevv=JSON.parse(localStorage.getItem("userLoginDataRevv"))||[];
-let email=document.querySelector("#user-email");
+let email=document.querySelector("#email");
 let pass=document.querySelector("#password-login");
 let validEmail=false;
 let validPassword=false;
