@@ -151,7 +151,7 @@ ul li img {
 .endTime{
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
-    color: rgba(0, 0, 0, 0.3);
+    color: black;
     font-size: 14px;
 }
 
@@ -251,6 +251,9 @@ ul li img {
     border-color: grey;
     margin-bottom: 35px;
 }
+#work div img:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 140, 186, 0.5);
+}
 .FAQs {
     background-color: #fcfcfc;
     margin: 0px 21px;
@@ -261,8 +264,13 @@ ul li img {
     width: 960px;
     margin: 0px 0px 20px;
     font-size: 30px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-left: 95px;
+    font-weight: bold;
+}
+.faq_div, 
+.faq img {
+    cursor: pointer;
 }
 
 .logos {
@@ -286,7 +294,8 @@ ul li img {
 }
 .logos div:hover {
     border-radius: 40px;
-    background-color: #f4f4f4
+    background-color: #f4f4f4;
+    cursor: pointer;
 }
 
 .journey {
