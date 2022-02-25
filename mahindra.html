@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahindra Cars Subscription in India | Subscribe Mahindra Cars - Revv</title>
     <link rel="stylesheet" href="./cssFiles/mahindra.css">
+    <script src="./jsFiles/mahindra.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -44,7 +45,6 @@
           <div class="search">Search</div>
         </div>
     </div>
-
     <script>
         var searchbarContainer = document.getElementById("searchbarContainer")
         var searchBar = document.getElementById("searchBar");
@@ -83,15 +83,18 @@
                 </div>
             </div>
         </div>
-        <div class="exploreBar">
-            <p style="font-family: Poppins; font-size: 16px; margin-bottom: 2px; margin-top: 20px;">Looking for Mahindra Subscription</p>
-            <div style="display: flex; font-family: Poppins">
-                <p style="font-size: 24px; margin: 2px 0px 25px; font-weight: bold;">By the Year</p>
-                <p style="font-size: 16px; margin: 0px 0px 16px; padding-left: 12px; color: teal; font-weight: bold;">EXPLORE ></p>
+        <div class="explorer" style="position: relative;">
+            <div class="exploreBar">
+                <p style="font-family: Poppins; font-size: 16px; margin-bottom: 2px; margin-top: 20px;">Looking for Mahindra Subscription</p>
+                <div style="display: flex; font-family: Poppins">
+                    <p style="font-size: 24px; margin: 2px 0px 25px; font-weight: bold;">By the Year</p>
+                    <p style="font-size: 16px; margin: 0px 0px 16px; padding-left: 12px; color: teal; font-weight: bold;">EXPLORE ></p>
+                </div>
             </div>
+            <div class="mahindraLogo"></div>
         </div>
     </div>
-    <div class="mahindraLogo"></div>
+    
     <div class="howItWork">
         <p style="font-size: 28px; font-family: Poppins; margin-bottom: 20px; color: rgb(27, 28, 36); font-weight: 800; text-align: left;">How it works</p>
         <div id="work" style="display: flex; gap: 40px;">
@@ -120,45 +123,45 @@
 
     <div class="FAQs">
         <div class="faq">FAQs</div>
-        <div style="display: flex;">
+        <div class = "faq_div" style="display: flex;">
             <img src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
             <p style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px; font-weight: bold;">What are my liabilities in case of damage / accident of the Mahindra car?</p>
         </div>
-        <div style="display: none; margin-left: 125px; margin-right: 120px;">
+        <div class="faq_hidden" style="display: none; margin-left: 125px; margin-right: 120px;">
             <p style="font-size:14px; font-family: Poppins; color: grey;">Your Mahindra car will be covered by comprehensive insurance, to take care of damage cases. In case of damage, your liability would be limited to the difference between the costs incurred to repair the damage and the proceeds from insurance claim with maximum liability limited to INR 10,000. In situations of irresponsible or unsafe or negligent usage, there could be discretionary exceptions to this policy, whereby you could be liable for all damages irrespective of whether we are able to claim insurance in such cases.</p>
         </div>
         <hr style="margin-left: 125px; margin-right: 120px; margin-top: 15px">
-        <div style="display: flex;">
+        <div class = "faq_div" style="display: flex;">
             <img src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
             <p style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px; font-weight: bold;">Can I end my Mahindra car subscription early, or choose to keep the car longer?</p>
         </div>
-        <div style="display: none; margin-left: 125px; margin-right: 120px;">
+        <div class="faq_hidden" style="display: none; margin-left: 125px; margin-right: 120px;">
             <p style="font-size:14px; font-family: Poppins; color: grey;">Yes, you can extend the car subscription anytime at normal prices. If you wish to return the car; you can do so anytime by just paying the fee difference.</p>
             <p style="font-size: 14px; font-family: Poppins; color: teal; margin-top: 5px;">Extend anytime at normal prices</p>
             <p style="font-size: 14px; font-family: Poppins; color: teal;">Return anytime, Just pay fee difference</p>
         </div>
         <hr style="margin-left: 125px; margin-right: 120px; margin-top: 15px">
-        <div style="display: flex;">
+        <div class = "faq_div" style="display: flex;">
             <img src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
             <p style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px; font-weight: bold;">Are there any restrictions on what can I use the Mahindra car for?</p>
         </div>
-        <div style="display: none; margin-left: 125px; margin-right: 120px;">
+        <div class="faq_hidden" style="display: none; margin-left: 125px; margin-right: 120px;">
             <p style="font-size:16px; font-family: Poppins; color: grey;">You can use the Mahindra car you have subscribed to for pretty much all the normal requirements. Abnormal usage (e.g., speed racing, towing/pushing/propelling, transportation of goods or people on commercial basis, transportation of large/heavy/hazardous items) is not allowed.</p>
         </div>
         <hr style="margin-left: 125px; margin-right: 120px; margin-top: 15px">
-        <div style="display: flex;">
+        <div class = "faq_div" style="display: flex;">
             <img src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
             <p style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px; font-weight: bold;">What are the benefits of Mahindra Subscriptions?</p>
         </div>
-        <div style="display: none; margin-left: 125px; margin-right: 120px;">
+        <div class="faq_hidden" style="display: none; margin-left: 125px; margin-right: 120px;">
             <p style="font-size:16px; font-family: Poppins; color: grey;">No upfront payments such as down payment or road tax, flexibility of subscribing for min. 1 month and extending or returning anytime, insurance and maintenance included in monthly fees, 24X7 roadside assistance and hassle-free service & maintenance are just a few benefits of Revv Mahindra Subscriptions.</p>
         </div>
         <hr style="margin-left: 125px; margin-right: 120px; margin-top: 15px">
-        <div style="display: flex;">
+        <div class = "faq_div" style="display: flex;">
             <img src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
             <p style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px; font-weight: bold;">What will be the car registration type and whose name will it be registered in?</p>
         </div>
-        <div style="display: none; margin-left: 125px; margin-right: 120px;">
+        <div class="faq_hidden" style="display: none; margin-left: 125px; margin-right: 120px;">
             <p style="font-size:16px; font-family: Poppins; color: grey;">The car will be registered as a premium commercial vehicle (black plate) with an All India permit and can be driven anywhere within India without any concerns. It will be registered in the name of Revv (PrimeMover Mobility Technologies Pvt. Ltd.) or its supply partners.</p>
         </div>
         <hr style="margin-left: 125px; margin-right: 120px; margin-top: 15px">
@@ -166,6 +169,7 @@
             <button style="height: 35px; width: 152px; margin-left: 95px; margin-top: 70px; margin-bottom: 50px; font-family: Poppins; color: rgb(28, 171, 162); font-weight: bold; font-size: 14px;">View All</button>
         </div>
     </div>
+
 
     <div class="logos">
         <div>
@@ -218,5 +222,6 @@
 
 </body>
 </html>
+
 
 

@@ -93,10 +93,12 @@ ul li img {
 
 .main {
     width: 100%;
-    height: 109vh;
+    height: 700px;
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     background-image: url("../REVV.co.in/mahindra-home.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 #searchbarContainer{
@@ -197,8 +199,9 @@ ul li img {
     background-size: 90%;
     background-repeat: no-repeat;
     position: absolute;
-    margin-top: -450px;
-    margin-left: 650px;
+    right: 30px;
+    margin-top: 50px;
+
 }
 .searchTop {
     width: 332px;
