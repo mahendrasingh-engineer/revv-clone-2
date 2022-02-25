@@ -97,7 +97,7 @@ ul li img {
     background-color: lightblue;
     display: flex;
     justify-content: space-between;
-    background-image: url("./REVV.co.in/background.jpg")
+    background-image: url("../REVV.co.in/background.jpg")
 }
 
 #searchbarContainer{
