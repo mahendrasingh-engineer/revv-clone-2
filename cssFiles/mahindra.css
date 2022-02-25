@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* NAV - BAR */
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    width: 200px;
+    float: left;
+    height: 70px;
+    display: flex;
+}
+
+.break {
+    float: left;
+    padding-top: 5px;
+    padding-left: 50px;
+    font-size: 40px;
+    color: rgb(174,174,174);
+}
+
+.title {
+    color: black;
+    font-size: 20px;
+    font-family: Arial;
+    padding-left: 10px;
+    float: left;
+    padding-top: 18px;
+}
+
+.title_1 {
+    color: rgb(174,174,174);
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Arial;
+    padding-left: 5px;
+    float: left;
+    padding-top: 18px;
+}
+
+.menu {
+    width: 600px;
+    float: left;
+    height: 70px;
+    
+}
+
+ul {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 20px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(60, 64, 67);
+}
+
+ul li a:hover {
+    color: teal;
+}
+
+ul li img {
+    margin-right: 5px;
+}
+
+/* BODY */
+
+
+.main {
+    width: 100%;
+    height: 109vh;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./REVV.co.in/mahindra-home.jpg");
+}
+
+#searchbarContainer{
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    background: #fff;
+    box-shadow: 3px 3px 6px 0 rgb(0 0 0 / 16%);
+    margin-top: 60px;
+    padding: 15px 0;
+}
+#searchBar{
+    display: none;
+    /* display: grid; */
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 100px;
+    margin-right: 122px;
+}
+
+#searchBar>div{
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    padding: 10px;
+}
+.city-box{
+    display: flex;
+}
+
+.locationIcon>i{
+    padding: 0 12px;
+    color: black;
+}
+
+.city{
+    border: 1px solid grey;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+.startTime{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+.endTime{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+.search{
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171));
+    color: white;
+    font-size: 18px;
+    margin-left: -5px;
+}
+
+.searchBar {
+    margin-top: 120px;
+    margin-left: 100px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Poppins;
+    height: 400px;
+    width: 600px;
+}
+.exploreBar {
+    margin-top: 120px;
+    padding: 0px 15px;
+    background-color: white;
+    margin-right: 100px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 150px;
+    height: 93px;
+    background-color: #e7e7e7;
+}
+.mahindraLogo {
+    width: 502px;
+    height: 263px;
+    background-image: url(./REVV.co.in/Mahindra-XUV-500.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 650px;
+}
+.searchTop {
+    width: 332px;
+    height: 20px;
+}
+#search {
+    height: 257px;
+    width: 509.58px;
+}
+.searchInput {
+    width: 479.58px;
+    height: 68px;
+    margin: 0px 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.searchInput img {
+    height: 24px;
+    width: 24px;
+}
+#date {
+    height: 63px;
+    width: 202px;
+    font-size: 20px;
+    font-family: Poppins;
+    margin-left: 10px;
+}
+#city_search {
+    width: 455.8px;
+    height: 65px;
+    margin-left: 10px;
+    margin-right: -10px;
+}
+
+.howItWork {
+    padding: 60px 15px 30px;
+    margin-left: 90px;
+}
+#work div {
+    height: 283px;
+    width: 243px;
+}
+#work div h4 {
+    font-size: 24px;
+    font-family: Poppins;
+    margin-bottom: 5px;
+}
+#work div p {
+    font-size: 14px;
+    font-family: Poppins;
+}
+#work div img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 35px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+#work div img:hover {
+    box-shadow: 0 0 4px 3px rgba(0, 140, 186, 0.5);
+}
+.FAQs {
+    background-color: #fcfcfc;
+    margin: 0px 21px;
+    padding-top: 20px;
+}
+.faq {
+    height: 36.59px;
+    width: 960px;
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: bold;
+    margin-left: 95px;
+}
+
+.logos {
+    width: 100%;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.logos div {
+    width: 120px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos div img {
+    height: 80%;
+    width: 99%;
+}
+.logos div:hover {
+    border-radius: 40px;
+    background-color: #f4f4f4
+}
+
+.journey {
+    margin: 0px 21px;
+    padding: 60px 0px 30px;
+    background-color: whitesmoke;
+}
+.ourJourney h2 {
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: bold;
+    margin-left: 95px;
+}
+.journeyLogo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.journeyLogo div {
+    height: 175px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
