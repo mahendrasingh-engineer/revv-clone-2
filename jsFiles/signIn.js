@@ -42,7 +42,7 @@ pass.addEventListener("input",function(){
     }
 });
 img.addEventListener("click",function(){
-    window.location.href="index.html";
+    window.close();
 });
 
 

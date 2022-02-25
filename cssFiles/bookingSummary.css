@@ -1,5 +1,5 @@
 div{
-    box-shadow: 1px 1px 2px;
+    /* box-shadow: 1px 1px 2px; */
 }
 body{
     background-color: #F1F1F1;
@@ -31,13 +31,13 @@ nav>div{
     margin: auto;
     display: flex;
     width: 95%;
-    padding: 10px;
+    padding: 5px;
     height: 262px;
 }
 #topLeft > div:nth-child(1) > div:nth-child(2) > h3{
     width: 100%;
     margin: 28px 0px 20px;
-    justify-content: center;
+    justify-content: left;
 }
 #bookingDetails{
     width: 100%;
@@ -65,7 +65,7 @@ nav>div{
     font-weight: 100;
 }
 #topLeft>div:nth-child(1)>div:nth-child(1){
-    width: 32%;
+    width: 22%;
     margin: auto;
     height: 95%;
 }
@@ -146,6 +146,11 @@ div>b,b>span{
     font-size: 18px;
     font-weight: 700;
 }
+#promoSpace{
+    min-height: 36px;
+    border: 0px;
+    border-bottom: 1px solid green;
+}
 #apply{
     border-radius: 4px;
     background-color: #0ebaba;
@@ -180,4 +185,10 @@ div>b,b>span{
     font-weight: 100;
     font-family: sans-serif;
     border-spacing: 2px;
+}
+
+#brand{
+    display: inline;
+    text-align: left;
+    margin-left: 0;
 }
