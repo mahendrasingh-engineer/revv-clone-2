@@ -4,6 +4,7 @@
 function newcar()
 {
     
+    
     var brandNew ="brandNewCar.html";
     window.location.href=brandNew;
     
