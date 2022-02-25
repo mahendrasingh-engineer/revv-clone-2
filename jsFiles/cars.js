@@ -63,6 +63,12 @@ function displayCar(cars)
 
         var priceSubDiv1 = document.createElement("div");
         priceSubDiv1.setAttribute("class","priceRange");
+        priceSubDiv1.setAttribute("id","firstP");
+
+        priceSubDiv1.addEventListener("click",function()
+        {
+          updateFirst();
+        });
 
       
         var price_270_Kms = document.createElement("p");
@@ -122,6 +128,10 @@ function displayCar(cars)
           var availButton = document.createElement("button");
           availButton.setAttribute("id","bookButton");
           availButton.textContent=ele.available;
+          availButton.addEventListener("click",function()
+          {
+            addCar(ele);
+          });
    
           extraChargeDiv.append(extraCharge,availButton);
           
@@ -138,3 +148,256 @@ function displayCar(cars)
 }
 
 displayCar(cars);
+
+
+function sortFun()
+{
+    var value = document.getElementById("sorting").value;
+    if(value=='h2l')
+    {
+         cars.sort(function(a,b)
+         {
+             return b.kms_270-a.kms_270;
+         })
+         displayCar(cars);
+    }
+    else if(value=='l2h')
+    {
+        cars.sort(function(a,b)
+        {
+            return a.kms_270-b.kms_270;
+        })
+        displayCar(cars);
+        console.log(cars)
+    }
+    else if(value=='exKmChrgh2l')
+    {
+      cars.sort(function(a,b)
+      {
+        return b.kms_675-a.kms_675;
+      })
+      displayCar(cars);
+    }
+    else if(value=='exKmChrgl2h')
+    {
+      cars.sort(function(a,b)
+      {
+        return a.kms_675-b.kms_675;
+      })
+      displayCar(cars);
+    }
+}
+
+
+function changeText()
+{
+  var value = document.getElementById("fuel").innerText;
+  console.log(value);
+
+  if(value=='exclude')
+  {
+    document.getElementById("fuel").innerText="include";
+    var result = cars.filter(function(ele)
+    {
+      return ele.kms_270+5310;
+    });
+    console.log(result);
+    displayCar(result);
+  }
+  else{
+    document.getElementById("fuel").innerText="exclude";
+    document.getElementById("fuel").style.textDecoration="underline";
+  }
+}
+
+
+function resetFun()
+{
+    var car = JSON.parse(localStorage.getItem("carDataBase"));
+    displayData(car);
+    document.getElementById("sorting").value="";
+    document.getElementById("fuel").innerText="include";
+    document.getElementById("fuel").style.textDecoration="underline";
+}
+
+// add element function
+
+var newArr = [];
+
+function addCar(ele)
+{
+    newArr.push(ele);
+    localStorage.setItem("bookedCar",JSON.stringify(newArr));
+
+    var get = JSON.parse(localStorage.getItem("bookedCar"));
+    console.log(get);
+}
+
+
+function filFun(value)
+{
+     
+      if(value=='Petrol'||value=='Diesel')
+      {
+        var result=cars.filter(function(ele)
+        {
+          return ele.fuel_type==value;
+        })
+        displayCar(result);
+      }
+      else if(value=='Automatic'||value=='Manual')
+      {
+        var result=cars.filter(function(ele)
+        {
+          return ele.function==value;
+        })
+        displayCar(result);
+      }
+      else if(value==5||value==7)
+      {
+        var result=cars.filter(function(ele)
+        {
+          return ele.seat==value;
+        })
+        displayCar(result);
+      }
+}
+
+
+function filHun()
+{
+  var value= document.getElementById("hun").value;
+
+   console.log(value);
+  var result=cars.filter(function(ele)
+  {
+    return ele.name.includes(value);
+  })
+  displayCar(result);
+  console.log(result);
+
+
+}
+
+function filMaru()
+{
+  var value= document.getElementById("maru").value;
+
+   console.log(value);
+  var result=cars.filter(function(ele)
+  {
+    return ele.name.includes(value);
+  })
+  displayCar(result);
+  console.log(result);
+}
+
+function filMahi()
+{
+  var value= document.getElementById("mahi").value;
+
+   console.log(value);
+  var result=cars.filter(function(ele)
+  {
+    return ele.name.includes(value);
+  })
+  displayCar(result);
+  console.log(result);
+}
+
+function filTata()
+{
+  var value= document.getElementById("tata").value;
+
+   console.log(value);
+  var result=cars.filter(function(ele)
+  {
+    return ele.name.includes(value);
+  })
+  displayCar(result);
+  console.log(result);
+}
+
+function filHonda()
+{
+  var value= document.getElementById("hon").value;
+
+   console.log(value);
+  var result=cars.filter(function(ele)
+  {
+    return ele.name.includes(value);
+  })
+  displayCar(result);
+  console.log(result);
+}
+
+function filToyo()
+{
+  var value= document.getElementById("toy").value;
+
+   console.log(value);
+  var result=cars.filter(function(ele)
+  {
+    return ele.name.includes(value);
+  })
+  displayCar(result);
+  console.log(result);
+}
+
+function filHatch()
+{
+  var value= document.getElementById("hatch").value;
+
+   console.log(value);
+  var result=cars.filter(function(ele)
+  {
+    return ele.type.includes(value);
+  })
+  displayCar(result);
+  console.log(result);
+}
+
+function filSedan()
+{
+  var value= document.getElementById("sedan").value;
+
+   console.log(value);
+  var result=cars.filter(function(ele)
+  {
+    return ele.type.includes(value);
+  })
+  displayCar(result);
+  console.log(result);
+}
+
+function filSUV()
+{
+  var value= document.getElementById("suv").value;
+
+   console.log(value);
+  var result=cars.filter(function(ele)
+  {
+    return ele.type.includes(value);
+  })
+  displayCar(result);
+  console.log(result);
+}
+
+function filMUV()
+{
+  var value= document.getElementById("muv").value;
+
+   console.log(value);
+  var result=cars.filter(function(ele)
+  {
+    return ele.type.includes(value);
+  })
+  displayCar(result);
+  console.log(result);
+}
+
+
+function updateFirst()
+{
+  document.getElementById("firstP").style.backgroundColor="white";
+}

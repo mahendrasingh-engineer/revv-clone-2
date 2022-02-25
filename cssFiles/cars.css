@@ -443,8 +443,9 @@
    
 }
 #container>div{
-      background-color: #eeeaea;
+      background-color: #F1F1F1;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border: 1px solid rgb(238, 235, 235);
 }
 #container>div:hover{
       background-color: white;
@@ -495,7 +496,8 @@ h4{
 #PriceMain>div{
       background-color: #ffffff;
       width: 33%;
-      height: 50px;
+      height: 60px;
+      border-top: 1px solid rgb(231, 228, 228);
 }
 .charge{
       display: flex;

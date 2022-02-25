@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's create Slider</title>
+    <script type="text/javascript">
+        
+        var left =1;
+        var right=5;
+        function show()
+        {
+   
+           for(var i=left;i<=right;i++)
+           {
+             document.getElementById("c"+i).style.display="inline-block";
+           }
+        }
+
+        function moveLeft()
+        {
+
+          if(left<=3&&right<=7)
+          {
+
+            document.getElementById("c"+left).style.display="none";
+            left+=1;
+            right+=1;
+            for(var i=left;i<=right;i++)
+           {
+             document.getElementById("c"+i).style.display="inline-block";
+           }
+
+        }
+        else
+        {
+            return;
+        }
+    }
+
+        function moveRight()
+        {
+
+          if(left>=2&&right>=6)
+          {
+
+            document.getElementById("c"+right).style.display="none";
+            left-=1;
+            right-=1;
+
+            for(var i=left;i<=right;i++)
+           {
+             document.getElementById("c"+i).style.display="inline-block";
+           }
+
+        }
+        else
+        {
+            return;
+        }
+    }
+        
+   
+   </script>
+
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+
+        #image>div{
+         background-color: rgb(72, 255, 0);
+          width:20%;
+          margin-left: 10px;
+          margin-right: 10px;
+          height: 200px;
+        
+        }
+        
+     
+        #image{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+           height: 300px;
+        
+        }
+       
+        .arrow-right{
+            position: absolute;
+            top: 80px;
+            left: 0px;
+            width: 50px;
+            border-radius: 50px;
+            text-align: center;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        .arrow-right>i{
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        .arrow-left{
+            position: absolute;
+            right:0px;
+            top: 80px;
+            width: 50px;
+            border-radius: 50px;
+            text-align: center;
+            height: 50px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        .arrow-left>i{
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        .item
+        {
+            font-size: 30px;
+            color: rgb(255, 242, 242);
+            display: none;
+        }
+    </style>
+</head>
+<body onload="show()">
+    
+
+        <div id="image">
+
+            <div  id="c1"  style="background-color: red;" class="item">
+                1
+            </div>
+
+            <div id="c2" style="background-color: black;" class="item">
+               2
+            </div>
+
+            <div id="c3" style="background-color: teal;" class="item"> 
+               3
+            </div>
+
+            <div id="c4" style="background-color: rgb(34, 34, 1);" class="item">
+               4
+            </div>
+
+            <div id="c5" style="background-color: orangered;" class="item">
+                5</div>
+            <div id="c6" style="background-color: green;" class="item">
+                6 
+            </div>
+
+            <div id="c7" style="background-color: white;" class="item">
+                7 
+            </div>
+            <div id="c8" style="background-color: grey;" class="item"> 
+                8
+            </div>
+
+
+            <span class="arrow-right" onClick="moveLeft()"><i class="fas fa-angle-double-right"></i></span>
+            <span class="arrow-left" onClick="moveRight()"><i class="fas fa-angle-double-left"></i></span>
+        </div>
+
+      
+       
+    
+     
+
+</body>
+</html>
+
+

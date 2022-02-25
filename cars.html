@@ -36,7 +36,7 @@
 
     </div> 
 
-    <div id="FAQ"> <a href="" id="FAQs">FAQs</a></div>
+    <div id="FAQ"> <a href="faq.html" id="FAQs">FAQs</a></div>
     <div id="logSign">
        <img src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg" alt="">
        <a href="./signIn.html" id="logIn"><p>Login or Signup</p></a>
@@ -85,17 +85,17 @@
 <div id="filterNav">
      <div id="filterBlog">Filters</div>
      <div id="reset">
-           <div><a href="">RESET ALL</a></div>
+           <div onclick="resetFun()"><a href="">RESET ALL</a></div>
            <div>Car Rental in <span id="selectedCity">Delhi-NCR</span></div>
      </div>
      <div id="fuelCost">
-          <input type="checkbox">
+          <input type="checkbox" onchange="changeText()">
           <p>Prices <span id="fuel"><u>exclude</u></span> fuel cost</p>
           <img src="https://www.revv.co.in/grapheneImages/CarsAndPricing/info-icon.svg" alt="">
      </div>
      <div id="sort">
          <p>Sort by:</p>
-         <select name="" id="sortBy">
+         <select name="" onchange="sortFun()" id="sorting">
            <option value="popularity">Popularity</option>
            <option value="l2h">Price Low to High</option>
            <option value="h2l">Price High to Low</option>
@@ -119,17 +119,17 @@
       <div id="segmentDiv">
            <h2 id="segTitle">Segment</h2>
            <div>
-           <input type="checkbox">
+           <input type="checkbox" id="hatch" value="Hatchback" onchange="filHatch()">
            <h3>Hatchback</h3>
           </div>
            <div>
-           <input type="checkbox">
+           <input type="checkbox" id="sedan" value="Sedan" onchange="filSedan()">
            <h3>Sedan</h3></div>
            <div>
-           <input type="checkbox">
+           <input type="checkbox" id="suv" value="SUV" onchange="filSUV()">
            <h3>SUV</h3></div>
            <div>
-           <input type="checkbox">
+           <input type="checkbox" id="muv" value="MUV" onchange="filMUV()">
            <h3>MUV</h3>
           </div>
   
@@ -138,25 +138,25 @@
         <div id="segmentDiv">
           <h2 id="segTitle">Brand</h2>
           <div>
-          <input type="checkbox">
+          <input type="checkbox" id="hun" value="Hyundai" onchange="filHun()">
           <h3>Hyundai</h3>
          </div>
           <div>
-          <input type="checkbox">
+          <input type="checkbox" id="maru" value="Maruti" onchange="filMaru()">
           <h3>Maruti</h3></div>
           <div>
-          <input type="checkbox">
+          <input type="checkbox" id="mahi" value="Mahindra" onchange="filMahi()">
           <h3>Mahindra</h3></div>
           <div>
-          <input type="checkbox">
+          <input type="checkbox" id="tata" value="Tata" onchange="filTata()">
           <h3>Tata</h3>
          </div>
          <div>
-          <input type="checkbox">
+          <input type="checkbox" id="hon" value="Honda" onchange="filHonda()">
           <h3>Honda</h3>
          </div>
          <div>
-          <input type="checkbox">
+          <input type="checkbox" id="toy" value="Toyota" onchange="filToyo()">
           <h3>Toyota</h3>
          </div>
  
@@ -165,11 +165,11 @@
        <div id="segmentDiv">
         <h2 id="segTitle">Fuel Type</h2>
         <div>
-        <input type="checkbox">
+        <input type="checkbox" onchange="filFun('Diesel')">
         <h3>Diesel</h3>
        </div>
         <div>
-        <input type="checkbox">
+        <input type="checkbox" onchange="filFun('Petrol')">
         <h3>Petrol</h3>
         </div>
         
@@ -179,11 +179,11 @@
      <div id="segmentDiv">
       <h2 id="segTitle">Transmission Type</h2>
       <div>
-      <input type="checkbox">
+      <input type="checkbox" onchange="filFun('Automatic')">
       <h3>Automatic</h3>
      </div>
       <div>
-      <input type="checkbox">
+      <input type="checkbox" onchange="filFun('Manual')">
       <h3>Manual</h3>
       </div>
       
@@ -193,11 +193,11 @@
    <div id="segmentDiv">
     <h2 id="segTitle">Seating Capacity</h2>
     <div>
-    <input type="checkbox">
+    <input type="checkbox" onchange="filFun(5)">
     <h3>5 Seats</h3>
    </div>
     <div>
-    <input type="checkbox">
+    <input type="checkbox" onchange="filFun(7)">
     <h3>7 Seats</h3>
     </div>
     

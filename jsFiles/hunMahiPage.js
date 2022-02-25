@@ -29,11 +29,14 @@ function unBox()
 
 // for showing car data 
 
-var car = JSON.parse(localStorage.getItem("unBoxCars"));
+var car = JSON.parse(localStorage.getItem("unBoxCars")) || [];
 
 console.log(car);
 function showcar(car)
-{
+{  
+    document.getElementById("Cars").innerHTML="";
+    document.getElementById("Cars").innerHTML="";
+
     car.map(function(ele)
     {
         var mainDiv = document.createElement("div");
@@ -99,8 +102,138 @@ function showcar(car)
 
 showcar(car);
 
+// function for sorting
 
 
+function sortFun()
+{
+    var value = document.getElementById("sorting").value;
+    if(value=='h2l')
+    {
+         car.sort(function(a,b)
+         {
+             return b.perMonthPrice-a.perMonthPrice;
+         })
+         showcar(car);
+    }
+    else if(value=='l2h')
+    {
+        car.sort(function(a,b)
+        {
+            return a.perMonthPrice-b.perMonthPrice;
+        })
+        showcar(car);
+        console.log(car)
+    }
+}
+
+// for searching
+
+function searchFun()
+{
+        var text = document.getElementById("search").value;
+        var searchResult = car.filter(function(ele)
+        {
+            return ele.name.includes(text.toUpperCase());
+        })
+
+        showcar(searchResult);
+     
+}
+
+
+// function for filtering
+// var cars = JSON.parse(localStorage.getItem("unBoxCars"));
+function filFun(value)
+{
+    console.log(value);
+
+    var valueSearch=car.filter(function(ele)
+    {
+        return ele.fuel_type.includes(value.toUpperCase());
+    })
+    showcar(valueSearch);
+    console.log(valueSearch);
+}
+
+
+function byRange()
+{
+    var stRange = document.getElementById("startRange").value;
+    var endRange = document.getElementById("endRange").value;
+    
+    var result = car.filter(function(ele)
+    {
+        return ele.perMonthPrice >=Number(stRange) && ele.perMonthPrice<=Number(endRange);
+    })
+
+    showcar(result);
+    console.log(result);
+}
+
+
+
+function filHatch()
+{
+  var value= document.getElementById("hatch").value;
+
+   console.log(value);
+  var result=car.filter(function(ele)
+  {
+    return ele.type.includes(value);
+  })
+  showcar(result);
+  console.log(result);
+}
+
+function filSedan()
+{
+  var value= document.getElementById("sedan").value;
+
+   console.log(value);
+  var result=car.filter(function(ele)
+  {
+    return ele.type.includes(value);
+  })
+  showcar(result);
+  console.log(result);
+}
+
+function filSUV()
+{
+  var value= document.getElementById("suv").value;
+
+   console.log(value);
+  var result=car.filter(function(ele)
+  {
+    return ele.type.includes(value);
+  })
+   showcar(result);
+  console.log(result);
+}
+
+
+function filFun(value)
+{
+     
+      if(value=='Petrol'||value=='Diesel')
+      {
+        var result=car.filter(function(ele)
+        {
+          return ele.fuel_type==value;
+        })
+        showcar(result);
+      }
+      else if(value=='Automatic'||value=='Manual')
+      {
+        var result=car.filter(function(ele)
+        {
+          return ele.function==value;
+        })
+        showcar(result);
+      }
+     
+}
 
 
 

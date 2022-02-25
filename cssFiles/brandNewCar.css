@@ -8,7 +8,7 @@
 #BigDivContainer
 {
     width: 85%;
-    height: auto;
+    height: 700px;
     display: flex;
     margin: auto;
     justify-content: space-around;
@@ -21,7 +21,8 @@
 #filter
 {
   width: 25%;
-  height: 630px;
+  height: auto;
+  margin-right: 10px;
 }
 #filter a{
     text-decoration: none;
@@ -45,7 +46,7 @@
 }
 #selectCity
 {
-    width: 100%;
+    width: 95%;
     height: 40px;
     margin-top: 5px;
     color: black;
@@ -61,7 +62,7 @@
     font-family: sans-serif;
 }
 #search{
-    width: 98%;
+    width: 95%;
     height: 40px;
     font-size: 14px;
 }
@@ -69,19 +70,23 @@
     width: 45%;
     height: 40px;
     font-size: 14px;
+    border: none; 
+    border-bottom: 1px solid rgb(131, 130, 130);
 }
 #endRange
 {
     width: 50%;
     height: 40px;
-    font-size: 14px; 
+    font-size: 14px;
+    border: none; 
+    border-bottom: 1px solid rgb(131, 130, 130);
 }
 
 #xfilter{
     width: 323px;
     height:700px;
     margin-right: 30px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
 }
 #segmentDiv{
     width: 250px;
@@ -106,10 +111,7 @@
       height:19px;
      
 }
-#segmentDiv>div:nth-child(2)
-{
-    
-}
+
 #segmentDiv>div:nth-child(3)
 {
     margin-top: 5px;
@@ -229,38 +231,50 @@
     width: 100%;
     height: auto;
 }
+#hunName{
+   display: flex;
+   margin-top: 10px;
+}
+#hunName>div{
+    margin-left: 10px;
+}
 
-#Cars>div{
-    margin-top: 10px;
+#hunName>img{
+    width: 100px;
+    height: 50px;
+}
+#hunName>div>h2{
+       font-size: 20px;
+       color: #1B1C24;
+}
+#hunName>div>p{
+    font-size: 14px;
+    color: #7F8091;
+}
+
+/* one blog creation for sliding */
+
+#varient{
+    width: auto;
+    height: 200px;
+    margin-top: 40px;
     display: flex;
-    justify-content: space-around;
-    height: 100px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: relative;
+
 }
-#Cars>div:first-child{
-    margin-top: 3px;
-}
-#carImage{
-    width: 170px;
-    height: 85px;
-}
-#Cars>div h1{
-    font-size: 17px;
-}
-#Cars>div h2{
-    font-size: 23px;
-    font-weight: 700px;
-}
+
+
 #fuel{
     margin-right: 15px;
-    font-size: 13px;
+    font-size: 15px;
 }
 #function{
-    font-size: 13px;
+    font-size: 15px;
 }
 #typeDiv{
     display: flex;
-    margin-top: 12px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 #carInfo{
     margin-top: 6px;
@@ -268,12 +282,56 @@
 .logo{
     margin-right: 3px;
     width: 11px;
-    height: 13px;
+    height: 15px;
     margin-top: 3px;
 }
-.carType{
-    font-size: 13px;
+#varient>div{
+    width:260px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 201px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+#varient>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 205px;
+}
+#varient>div h1{
+      font-size: 25px;
+      margin-top: 10px;
+      margin-left: 20px;
+}
+#varient>div h2{
+    font-size: 20px;
+    margin-left: 20px;
+}
+#carName{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+#version{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #1CABA2;
+    
+}
+.arrow-right{
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    margin-right: -25px;
+    cursor: pointer;
+}
+.arrow-left{
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
 
 /* foter creation */
 #midFoter{
