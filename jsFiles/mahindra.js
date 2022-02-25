@@ -1,5 +1,8 @@
 const faqs_div = document.querySelectorAll(".faq_div")
 const faq_hidden = document.querySelectorAll(".faq_hidden")
+const plus = document.querySelectorAll(".plusIcon")
+const minus = document.querySelectorAll(".minusIcon")
+const para = document.querySelectorAll(".para")
 // console.log(faq_hidden[1])
 faqs_div.forEach(function(elem,index) {
     elem.addEventListener("click", function() {
@@ -13,9 +16,14 @@ function display(index) {
     // console.log(faq_hidden[index])
     if(faq_hidden[index].style.display == 'none') {
         faq_hidden[index].style.display = 'block'
+        // plus[index].style.display = 'none'
+        // minus[index].style.display = 'block'
+        
     }
     else {
         faq_hidden[index].style.display = 'none'
+        // minus[index].style.display = 'none'
+        // plus[index].style.display = 'block'
     }
 }
 
