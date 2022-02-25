@@ -1,11 +1,18 @@
-const faq_div = document.querySelectorAll(".faq_div")
-faq_div.forEach( (faqs) => {
-    faqs.addEventListener('click', () => {
-        console.log("hello")
-        document.querySelector(".faq_hidden").style.display = 'block';
-    })
+const faqs_div = document.querySelectorAll(".faq_div")
+        const faq_hidden = document.querySelectorAll(".faq_hidden")
+        // console.log(faq_hidden[1])
+        faqs_div.forEach(function(elem,index) {
+            elem.addEventListener("click", function() {
+                // console.log(faqs_div[index])
+                display(index)
+            })
+        })
 
-})
+        function display(index) {
+            // console.log(faq_hidden)
+            // console.log(faq_hidden[index])
+            faq_hidden[index].style.display = 'block'
+        }
 
 var searchbarContainer = document.getElementById("searchbarContainer")
 var searchBar = document.getElementById("searchBar");
