@@ -20,7 +20,8 @@
     />
     <link rel="stylesheet" href="./cssFiles/index.css" />
   </head>
-  <body>
+  <body onload="show()">
+    <!-- header container creation -->
     <div id="headerContainer">
       <div id="navbar">
         <div id="left">
@@ -30,19 +31,23 @@
           />
         </div>
         <div id="right">
-          <a class="subscription" href="hyundai.html">
-            <img
-              src="https://www.revv.co.in/imgs/hyundai_logo_hover.svg"
-              alt=""
-            />
-          </a>
-          <a class="subscription" href="mahindra.html">
-            <img
-              class="mahindra"
-              src="https://www.revv.co.in/imgs/mahindra_logo_hover.svg"
-              alt=""
-            />
-          </a>
+          <div>
+            <a class="subscription" href="hyundai.html">
+              <img
+                src="https://www.revv.co.in/imgs/hyundai_logo_hover.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div>
+            <a class="subscription" href="mahindra.html">
+              <img
+                class="mahindra"
+                src="https://www.revv.co.in/imgs/mahindra_logo_hover.svg"
+                alt=""
+              />
+            </a>
+          </div>
           <div onclick="window.location.href='faq.html'" class="faqs">FAQs</div>
           <div class="loginOrSignup">
             <div class="icon">
@@ -53,6 +58,8 @@
         </div>
       </div>
     </div>
+
+    <!-- searchbar creation  -->
     <div id="searchbarContainer">
       <div id="searchBar">
         <div class="city city-box">
@@ -66,6 +73,9 @@
         <div class="search">Search</div>
       </div>
     </div>
+
+    <!-- search box creation -->
+    
     <div id="parentAdContainer">
       <div id="advertiseContainer">
         <!-- left searchBox start  -->
@@ -89,7 +99,9 @@
                 alt="rentals logo"
               />
             </div>
-            <p>Self drive car rentals in India</p>
+            <div class="spanParent">
+              Self drive car rentals in <span class="citySpan">India</span>
+            </div>
           </div>
           <!-- bottom-section  -->
           <div id="cityAndTime">
@@ -108,6 +120,135 @@
             <button>Search</button>
           </div>
         </div>
+    <!-- popup window creation  -->
+        <div id="container">
+          <div id="subContainer">
+            <div id="head">
+              <div class="selectCity">
+                <div>Select City</div>
+              </div>
+              <div class="crossIcon">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <div class="bottomBorder"></div>
+            <div id="cityListBox">
+              <div id="firstBox">
+                <div class="para">Top Cities</div>
+                <div id="topCities">
+                  <div class="city-div">
+                    <div class="topCity selected">Bangalore</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="city-div">
+                    <div class="topCity selected">Hyderabad</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="city-div">
+                    <div class="topCity selected">Mumbai</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="city-div">
+                    <div class="topCity selected">Delhi-NCR</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="city-div">
+                    <div class="topCity selected">Chennai</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                  <div class="city-div">
+                    <div class="topCity selected">Pune</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="secondBox">
+                <div class="para">OtherCities</div>
+                <div id="otherCities">
+                  <div class="city-div">
+                    <div class="otherCity selected">Kolkata</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Ahemdabad</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Bhubneswar</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Chandigarh</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Coimbatore</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">jaipur</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Kochi</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Mangalore</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Mysore</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Nagpur</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Surat</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Tirupati</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Trivandrum</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Vadodara</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Vijayawada</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+      
+                  <div class="city-div">
+                    <div class="otherCity selected">Vizag</div>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- left searchBox end  -->
 
@@ -119,6 +260,19 @@
               alt="rental image"
             />
           </div>
+          <!-- <div id="safeCars">
+            <img
+              src="https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_Desktop_1_FG.webp"
+              alt="rental image"
+            />
+          </div>
+          <div id="safeCars">
+            <img
+              src="https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_Desktop_1_FG.webp"
+              alt="rental image"
+            />
+          </div> -->
+          
         </div>
         <!-- right advertiseContainer end -->
       </div>
@@ -126,40 +280,44 @@
 
     <div id="midContainer">
       <div class="rental-packages senitiged-margin">
+
+        <!-- featured bo creation  -->
         <div id="featuredContainer">
           <div class="header">
             <div class="title">Featured</div>
             <div class="arrowIcon">
-              <div><i class="fa-solid fa-angle-left"></i></div>
-              <div><i class="fa-solid fa-angle-right"></i></div>
+              <div onclick="moveLeft()"><i class="fa-solid fa-angle-left"></i></div>
+              <div onclick="moveRight()"><i class="fa-solid fa-angle-right"></i></div>
             </div>
           </div>
           <div id="discountBoxes">
-            <div>
+            <div id="child1">
               <img
                 src="https://revvselfdrivecar.s3.us-west-2.amazonaws.com/5+days.png"
                 alt="5 days Package"
               />
             </div>
-            <div>
+            <div id="child2">
               <img
                 src="https://revvselfdrivecar.s3.us-west-2.amazonaws.com/10+days.png"
                 alt="10 days Package"
               />
             </div>
-            <div>
+            <div id="child3">
               <img
                 src="https://revvselfdrivecar.s3.us-west-2.amazonaws.com/15+days.png"
                 alt="15 days Package"
               />
             </div>
-            <!-- <div><img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_01-min.jpg" alt="car offer"></div>
-              <div><img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_02-min.jpg" alt="car offer"></div>
-              <div><img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_03-min.jpg" alt="car offer"></div>
-              <div><img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_04-min.jpg" alt="car offer"></div> -->
+            <!-- <div id="child4"><img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_01-min.jpg" alt="car offer"></div>
+              <div id="child5"><img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_02-min.jpg" alt="car offer"></div>
+              <div id="child6"><img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_03-min.jpg" alt="car offer"></div>
+              <div id="child7"><img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/subscriptions_banners_04-min.jpg" alt="car offer"></div> -->
           </div>
         </div>
       </div>
+
+      <!-- senitized box creation  -->
       <div id="senitizedContainer">
         <div class="header">
           <div class="title">Sanitized & safe cars</div>
@@ -196,6 +354,8 @@
           <!-- <div><img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/staging_images/banner_sanitised_04-min.jpg" alt="resenitization"></div> -->
         </div>
       </div>
+
+      <!-- facilities box creation  -->
       <div id="facilitiesContainer">
         <div class="header">
           <div class="title">Why Revv</div>
@@ -284,12 +444,14 @@
           </div> -->
         </div>
       </div>
+
+      <!-- FAQs box creation  -->
       <div id="faqsContainer">
         <div class="header">
           <div class="title">FAQs</div>
           <div class="viewAll"><a href="">View all</a></div>
         </div>
-        <div id="subContainer">
+        <div id="faqSubContainer">
           <div class="parentQue">
             <div class="question">
               <h4>Is there a speed limit?</h4>
@@ -334,6 +496,8 @@
           </div>
         </div>
       </div>
+
+      <!-- review box creation  -->
       <div id="reviewContainer">
         <div class="header">
           <div class="title">Happy Customers</div>
@@ -472,6 +636,8 @@
           </div> -->
         </div>
       </div>
+
+      <!-- downlod app box creation  -->
       <div id="downlodAppContainer">
         <div id="downlodAppChild">
           <div id="leftDiv">
@@ -511,6 +677,8 @@
           </div>
         </div>
       </div>
+
+      <!-- revv journey box creation  -->
       <div id="revvJourneyContainer">
         <div class="header">
           <div class="title">Our journey so far</div>
@@ -546,6 +714,8 @@
           </div>
         </div>
       </div>
+
+      <!-- investors ox creation  -->
       <div id="investorsContainer">
         <div class="header">
           <div class="title">Our Investors</div>
@@ -578,21 +748,8 @@
         </div>
       </div>
     </div>
-    <script>
-      var searchbarContainer = document.getElementById("searchbarContainer")
-      var searchBar = document.getElementById("searchBar");
-      window.onscroll = function(){
-        if(window.pageYOffset >= 582){
-          searchBar.style.display="grid";
-          searchbarContainer.style.display= "block";
-          console.log("aa gaya")
-        } else {
-          searchBar.style.display="none";
-          searchbarContainer.style.display= "none";
-          
-        }
-      }
-    </script>
   </body>
+
+
   <script src="jsFiles/index.js"></script>
 </html>

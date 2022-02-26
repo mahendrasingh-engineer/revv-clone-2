@@ -62,12 +62,13 @@
     display: flex;
     justify-content: space-around;
     margin-top: 60px;
-    /* padding: 10px 0; */
-}
+    position: relative;
+} 
 
 #leftBox{
     width: 25%;
-    position: fixed;
+    align-self: flex-start;
+    position: sticky;
     top: 60px;
     left: 10px;
 }
@@ -88,9 +89,7 @@
 }
 #rightBox{
     width: 70%;
-    position: absolute;
     right: 25px;
-    /* padding: 10px 0; */
 }
 
 .header{
