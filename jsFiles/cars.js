@@ -224,13 +224,19 @@ function resetFun()
 
 var newArr = [];
 
+// function addCar(ele)
+// {
+//     newArr.push(ele);
+//     localStorage.setItem("bookedCar",JSON.stringify(newArr));
+
+//     var get = JSON.parse(localStorage.getItem("bookedCar"));
+//     console.log(get);
+// }
 function addCar(ele)
 {
-    newArr.push(ele);
-    localStorage.setItem("bookedCar",JSON.stringify(newArr));
-
-    var get = JSON.parse(localStorage.getItem("bookedCar"));
-    console.log(get);
+  newArr.push(ele);
+  localStorage.setItem("unBoxData",JSON.stringify(newArr));
+  window.location.href="firstPayment.html";
 }
 
 
@@ -401,3 +407,37 @@ function updateFirst()
 {
   document.getElementById("firstP").style.backgroundColor="white";
 }
+
+
+
+
+// document.getElementById("filter").addEventListener("click",menuBtn);
+// var btn2 = true;
+// function menuBtn()
+// {
+
+//     if(btn2)
+//     {
+//       document.getElementById("filter").style.display="block";
+//       btn2=false;
+//     }
+//     else{
+//       document.getElementById("filter").style.display="none";
+//       btn2=true;
+//     }
+    
+
+
+//   }
+ 
+  
+
+
+
+
+// document.getElementById("menu").addEventListener("dblclick",menuFun);
+
+// function menuFun()
+// {
+  
+// }

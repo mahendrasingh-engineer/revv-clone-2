@@ -12,9 +12,128 @@
     display: flex;
     margin: auto;
     justify-content: space-around;
+    margin-top: 60px;
 
 
 }
+
+
+/* Nav Creation */
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    box-shadow: 3px 3px 6px 0 rgb(0 0 0 / 16%);
+}
+
+#logoImage1{
+    height:50px;
+     margin-left: 100px; 
+     position: relative;
+     
+}
+
+
+#sanitisedL{
+    margin-top:40px; 
+    margin-left: 130px; 
+    font-size: 11px; 
+    font-family: 'Poppins';
+     position: absolute;
+}
+
+.logo {
+    width: 200px;
+    float: left;
+    height: 70px;
+    display: flex;
+}
+
+.break {
+    float: left;
+    padding-top: 5px;
+    padding-left: 50px;
+    font-size: 40px;
+    color: rgb(174,174,174);
+}
+
+.title {
+    color: black;
+    font-size: 20px;
+    font-family: Arial;
+    padding-left: 10px;
+    float: left;
+    padding-top: 18px;
+}
+
+.title_1 {
+    color: rgb(174,174,174);
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Arial;
+    padding-left: 5px;
+    float: left;
+    padding-top: 18px;
+}
+
+.menu {
+    width: 600px;
+    float: left;
+    height: 70px;
+    
+}
+
+.menu>ul {
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.menu>ul li {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 20px;
+
+}
+
+.menu>ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(60, 64, 67);
+}
+
+.menu>ul li a:hover {
+    color: teal;
+}
+
+.menu>ul li img {
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Side Filter Creation */
 

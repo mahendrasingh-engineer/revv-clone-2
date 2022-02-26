@@ -1,19 +1,23 @@
 
 var unBoxed = [
  {
-     image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+     image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Front%20right.jpg",
+     image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Side.jpg",
+     image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Back_Backleft,right.jpg",
      name : "Mahindra Marazzo",
      type : "Unboxed",
      fuel_type : "Diesel",
-     type:"Hatchback",
+     type:"SUV",
      function :"Manual",
-     perMonthPrice : 20699,
-     originalPrice : 24599,
+     perMonthPrice : 25999,
+     originalPrice : 29899,
      city:"Delhi-NCR",
 
  },
  {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+    image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20500/Front%20right.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20500/Side.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20500/Side.jpg",
     name : "Mahindra XUV500",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -38,6 +42,8 @@ var unBoxed = [
 },
 {
     image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Scorpio/Front%20right.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Scorpio/Back_Backleft,right.jpg",
     name : "Mahindra B Scorpio",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -49,7 +55,9 @@ var unBoxed = [
 
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+     image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Front%20right.jpg",
+     image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Side.jpg",
+     image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Back_Backleft,right.jpg",
     name : "Mahindra Marazzo",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -61,19 +69,9 @@ var unBoxed = [
 
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
-    name : "Mahindra Marazzo",
-    type : "Unboxed",
-    fuel_type : "Diesel",
-    type:"Hatchback",
-    function :"Manual",
-    perMonthPrice : 20699,
-    originalPrice : 24599,
-    city:"Bangalore",
-
-},
-{
-   image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+    image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20500/Front%20right.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20500/Side.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20500/Side.jpg",
    name : "Mahindra XUV500",
    type : "Unboxed",
    fuel_type : "Diesel",
@@ -86,6 +84,8 @@ var unBoxed = [
 },
 {
    image : "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+   image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Side.jpg",
+   image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Back_Backleft,right.jpg",
    name : "Mahindra XUV300",
    type : "Unboxed",
    fuel_type : "Petrol",
@@ -97,7 +97,9 @@ var unBoxed = [
 
 },
 {
-   image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg",
+    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Scorpio/Front%20right.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Scorpio/Back_Backleft,right.jpg",
    name : "Mahindra Scorpio",
    type : "Unboxed",
    fuel_type : "Diesel",
@@ -109,7 +111,9 @@ var unBoxed = [
 
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Mahindra_KUV100.jpg",
+    image : "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Side.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Back_Backleft,right.jpg",
     name : "Mahindra XUV300",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -121,7 +125,9 @@ var unBoxed = [
 
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+    image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Front%20right.jpg",
+     image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Side.jpg",
+     image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Back_Backleft,right.jpg",
     name : "Mahindra Marazzo",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -133,7 +139,9 @@ var unBoxed = [
 
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Mahindra_KUV100.jpg",
+    image : "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+   image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Side.jpg",
+   image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Back_Backleft,right.jpg",
     name : "Mahindra XUV300",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -145,7 +153,9 @@ var unBoxed = [
 
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+    image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Front%20right.jpg",
+     image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Side.jpg",
+     image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Back_Backleft,right.jpg",
     name : "Mahindra m Marazzo",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -157,19 +167,9 @@ var unBoxed = [
 
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
-    name : "Mahindra Marazzo",
-    type : "Unboxed",
-    fuel_type : "Petrol",
-    type:"Hatchback",
-    function :"Manual",
-    perMonthPrice : 20699,
-    originalPrice : 24599,
-    city:"Mumbai",
-
-},
-{
-   image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+    image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20500/Front%20right.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20500/Side.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20500/Side.jpg",
    name : "Mahindra XUV500",
    type : "Unboxed",
    fuel_type : "Diesel",
@@ -181,7 +181,9 @@ var unBoxed = [
 
 },
 {
-   image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg",
+    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Scorpio/Front%20right.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Scorpio/Back_Backleft,right.jpg",
    name : "Mahindra Scorpio",
    type : "Unboxed",
    fuel_type : "Diesel",
@@ -193,7 +195,9 @@ var unBoxed = [
 
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Mahindra_KUV100.jpg",
+    image : "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Side.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Back_Backleft,right.jpg",
     name : "Mahindra XUV300",
     type : "Unboxed",
     fuel_type : "Petrol",
@@ -206,6 +210,8 @@ var unBoxed = [
 },
 {
     image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Scorpio/Front%20right.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Scorpio/Back_Backleft,right.jpg",
     name : "Mahindra Scorpio",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -217,7 +223,9 @@ var unBoxed = [
  
  },
  {
-     image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Mahindra_KUV100.jpg",
+     image : "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+     image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Side.jpg",
+     image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Back_Backleft,right.jpg",
      name : "Mahindra XUV300",
      type : "Unboxed",
      fuel_type : "Diesel",
@@ -229,7 +237,9 @@ var unBoxed = [
  
  },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+    image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Front%20right.jpg",
+     image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Side.jpg",
+     image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Back_Backleft,right.jpg",
     name : "Mahindra Marazzo",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -241,6 +251,8 @@ var unBoxed = [
 },
 {
     image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_Scorpio.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Scorpio/Front%20right.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Scorpio/Back_Backleft,right.jpg",
     name : "Mahindra Scorpio",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -252,7 +264,9 @@ var unBoxed = [
  
  },
  {
-     image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Mahindra_KUV100.jpg",
+    image : "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Side.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Back_Backleft,right.jpg",
      name : "Mahindra XUV300",
      type : "Unboxed",
      fuel_type : "Diesel",
@@ -264,7 +278,9 @@ var unBoxed = [
  
  },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+    image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Front%20right.jpg",
+     image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Side.jpg",
+     image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Back_Backleft,right.jpg",
     name : "Mahindra Marazzo",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -275,7 +291,9 @@ var unBoxed = [
     city:"Pune",
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Mahindra_KUV100.jpg",
+    image : "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+   image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Side.jpg",
+   image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Back_Backleft,right.jpg",
     name : "Mahindra XUV300",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -287,7 +305,9 @@ var unBoxed = [
 
 },
 {
-   image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+    image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Front%20right.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Side.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Back_Backleft,right.jpg",
    name : "Mahindra Marazzo",
    type : "Unboxed",
    fuel_type : "Diesel",
@@ -298,7 +318,9 @@ var unBoxed = [
    city:"Kolkata",
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Mahindra_KUV100.jpg",
+     image : "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Side.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Back_Backleft,right.jpg",
     name : "Mahindra XUV300",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -310,7 +332,9 @@ var unBoxed = [
 
 },
 {
-   image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+    image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Front%20right.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Side.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Back_Backleft,right.jpg",
    name : "Mahindra Marazzo",
    type : "Unboxed",
    fuel_type : "Diesel",
@@ -321,7 +345,9 @@ var unBoxed = [
    city:"Pune",
 },
 {
-    image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Mahindra_KUV100.jpg",
+    image : "https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/SUV_new/Mahindra_XUV_300.jpg",
+   image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Side.jpg",
+   image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20XUV%20300/Back_Backleft,right.jpg",
     name : "Mahindra XUV300",
     type : "Unboxed",
     fuel_type : "Diesel",
@@ -333,7 +359,9 @@ var unBoxed = [
 
 },
 {
-   image : "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/SUV_new/Mahindra_xuv500.jpg",
+    image : "https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Front%20right.jpg",
+    image1:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Side.jpg",
+    image2:"https://lt-car-images.s3.ap-south-1.amazonaws.com/Mahindra%20Marazzo/Back_Backleft,right.jpg",
    name : "Mahindra Marazzo",
    type : "Unboxed",
    fuel_type : "Diesel",

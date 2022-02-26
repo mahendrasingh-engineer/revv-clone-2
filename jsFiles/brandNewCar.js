@@ -30,6 +30,10 @@ function showcar(car)
     {
         var mainDiv = document.createElement("div");
          mainDiv.setAttribute("id","child"+count++)
+         mainDiv.addEventListener("click",function()
+         {
+             addCar(ele);
+         });
         var carName=document.createElement("p");
         carName.innerText=ele.name;
         carName.setAttribute("id","carName")
@@ -138,93 +142,6 @@ function sortFun()
 
 
 
-
-
-
-
-
-// var carSantro = JSON.parse(localStorage.getItem("hyundaiSantro"));
-// console.log(carSantro);
-// var count=1;
-
-// function showcar(carSantro)
-// {
-//     document.getElementById("varientTwo").innerHTML="";
-//     carSantro.map(function(ele)
-//     {
-//         var mainDiv = document.createElement("div");
-//          mainDiv.setAttribute("id","child"+count++)
-//         var carName=document.createElement("p");
-//         carName.innerText=ele.name;
-//         carName.setAttribute("id","carName")
-
-//         var carVersion=document.createElement("b");
-//         carVersion.innerText=ele.version;
-//         carVersion.setAttribute("id","version")
-
-
-    
-//         var typeDiv = document.createElement("div");
-//         typeDiv.setAttribute("id","typeDiv");
-
-//         var logo1 = document.createElement("img");
-//         logo1.setAttribute("src","https://www.revv.co.in/grapheneImages/CarsAndPricing/transmission-icon.svg");
-//         logo1.setAttribute("class","logo");
-//         var fuel_typo = document.createElement("p");
-//         fuel_typo.innerText=ele.fuel_type;
-//         fuel_typo.setAttribute("id","fuel");
-
-//         var logo2 = document.createElement("img");
-//         logo2.setAttribute("src","https://www.revv.co.in/grapheneImages/CarsAndPricing/automatic-icon.svg");
-//         logo2.setAttribute("class","logo");
-//         var carFuntion = document.createElement("p");
-//         carFuntion.innerText=ele.function;
-//         carFuntion.setAttribute("id","function");
-
-//         typeDiv.append(logo1,fuel_typo,logo2,carFuntion);
-
-
-//         var priceDiv = document.createElement("div");
-
-//         var perMonPrice = document.createElement("h1");
-//          perMonPrice.innerHTML="₹"+ele.perMonthPrice+"/month";
-
-//          var originalP = document.createElement("h2");
-//          originalP.innerText="₹"+ele.originalPrice;
-//          originalP.style.textDecoration="line-through";
-//          originalP.style.color="#808080";
-        
-//          priceDiv.append(perMonPrice,originalP);
-
-//          mainDiv.append(carName,carVersion,typeDiv,priceDiv);
-
-//          document.getElementById("varientTwo").append(mainDiv);
-
-
-//     });
-// }
-
-// showcar(carSantro);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var left=1;
 var right=3;
 function show()
@@ -277,4 +194,16 @@ else
 {
     return;
 }
+}
+
+
+var unbox = [];
+
+function addCar(ele)
+{
+      unbox.push(ele);
+      localStorage.setItem("unBoxData",JSON.stringify(unbox));
+
+      var get = JSON.parse(localStorage.getItem("unBoxData"));
+     window.location.href="firstPayment.html";
 }

@@ -40,6 +40,10 @@ function showcar(car)
     car.map(function(ele)
     {
         var mainDiv = document.createElement("div");
+
+        mainDiv.addEventListener("click",function(){
+              unboxData(ele);
+        })
          
         var carImage = document.createElement("img");
         carImage.setAttribute("src",ele.image);
@@ -235,7 +239,16 @@ function filFun(value)
      
 }
 
+var unbox = [];
 
+function unboxData(ele)
+{
+      unbox.push(ele);
+      localStorage.setItem("unBoxData",JSON.stringify(unbox));
+
+      var get = JSON.parse(localStorage.getItem("unBoxData"));
+     window.location.href="firstPayment.html";
+}
 
 
     
