@@ -80,7 +80,7 @@ function loginFunction(){
 function validate(){
     if(validEmail&&validPassword){
         alert("you have logged in successfully");
-        window.location.href="index.html";
+        window.close();
     }
     else if(validEmail){
         alert("login failed, wrong passwod")

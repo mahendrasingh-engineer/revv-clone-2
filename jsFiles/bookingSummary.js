@@ -1,0 +1,10 @@
+let name;
+let image;
+let function0;
+let feulType;
+let seat;
+let kms_270;
+let kms_450;
+let kms_675;
+let exChargePerKms;
+let available;

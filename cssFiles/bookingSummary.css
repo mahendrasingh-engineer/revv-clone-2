@@ -4,8 +4,6 @@ div{
 body{
     background-color: #F1F1F1;
 }
-nav{
-}
 nav>div{
     width: 100%;
     height: 60px;
@@ -18,6 +16,17 @@ nav>div{
     grid-template-rows: 899px;
     grid-template-areas: "a a a a a a a b b b";
     grid-gap: 10px;
+}
+@media all and (max-width: 600px){
+    #topDiv{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: 2fr;
+        grid-template-areas: "a"
+                             "b";
+        grid-gap: 10px;
+        margin-left: 30px;
+    }
 }
 #topLeft{
     width: auto;
@@ -32,7 +41,6 @@ nav>div{
     display: flex;
     width: 95%;
     padding: 5px;
-    height: 262px;
 }
 #topLeft > div:nth-child(1) > div:nth-child(2) > h3{
     width: 100%;
@@ -79,7 +87,6 @@ nav>div{
     margin-top: 10px;
     width: 95%;
     padding: 10px;
-    height: 540px;
 }
 #topLeft>div:nth-child(2)>h3{
     width: 100%;
@@ -209,4 +216,8 @@ div>b,b>span{
     font-family: 'poppins';
     font-size: 28px;
     color: #FFFF;
+}
+#view > div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
 }

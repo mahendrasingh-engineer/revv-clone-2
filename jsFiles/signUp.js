@@ -69,7 +69,8 @@ function signUpFunction2(event){
        
 }
 img.addEventListener("click",function(){
-    window.location.href="index.html";
+    window.close();
+
 });
 function signUpFunction1(){
     console.log(emailvalue,passValue,passValue.length);
@@ -77,7 +78,7 @@ function signUpFunction1(){
     userLoginDataRevv.push({email:emailvalue,password:JSON.stringify(email.value)});
     alert("you have signed up successfully");
     localStorage.setItem("userLoginDataRevv",JSON.stringify(userLoginDataRevv));
-    window.location.href="signIn.html";
+    window.close();
 }
 
 
