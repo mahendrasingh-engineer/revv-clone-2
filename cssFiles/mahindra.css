@@ -156,10 +156,13 @@ ul li img {
     .responsive-nav {
         display: block;
     }
-
     .main {
+        margin-top: -100px !important;
         display: block!important;
         background-image: none!important;
+    }
+    .explorer {
+        display: none!important;
     }
     .mahindraLogo {
         display: none;
@@ -169,6 +172,12 @@ ul li img {
     }
     #searchbarContainer {
         display: none!important;
+    }
+    #firstFoter {
+        display: none;
+    }
+    .faq {
+        margin-top: -200px !important;
     }
 }
 
