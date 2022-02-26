@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.revv.co.in/grapheneImages/newopen/logo.svg" type="image/x-icon">  
 </head>
 <body>
     <div class="navbar">
@@ -25,10 +26,33 @@
         <div class="menu">
             <ul>
                 <li><a href="">How it works</a></li>
-                <li><a href="">FAQs</a></li>
+                <li><a href="./faq.html">FAQs</a></li>
                 <li><img id="img" src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"></li>
-                <li><a href="">Login or Signup</a></li>
+                <li><a href="./login.html">Login or Signup</a></li>
             </ul>
+        </div>
+    </div>
+
+    <div class='responsive-nav'>
+        <div class='nav-images'>
+            <div>
+                <img src='https://www.revv.co.in/imgs/ic-back.svg'>
+                <div class='nav-image-logo'>
+                    <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/revvLogoWhite.png">
+                    <p>Sanitised. Safe</p>
+                </div>
+            </div>
+            <div class="nav-image-mahi">
+                <img src="https://www.revv.co.in/grapheneImages/hyundai/logo-mahindra-sub-mob@2x.png">
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <div>
+                By the Month
+            </div>
+            <div>
+                By the Year
+            </div>
         </div>
     </div>
 
@@ -38,26 +62,13 @@
             <div class="locationIcon">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <div class="cityBox">Select City</div>
+            <div class="cityBox"><p style="color: rgba(0, 0, 0, 0.3);">City</p>Select City</div>
           </div>
           <div class="startTime">Start Date</div>
           <div class="endTime"><p style="color: rgba(0, 0, 0, 0.3);">Duration</p>1,2,3 or 6 Month</div>
           <div class="search">Search</div>
         </div>
     </div>
-    <script>
-        var searchbarContainer = document.getElementById("searchbarContainer")
-        var searchBar = document.getElementById("searchBar");
-        window.onscroll = function(){
-          if(window.pageYOffset >= 582){
-            searchBar.style.display="grid";
-            searchbarContainer.style.display= "block";
-          } else {
-            searchBar.style.display="none";
-            searchbarContainer.style.display= "none"; 
-          }
-        }
-      </script>
 
     <div class="main">
         <div class="searchBar">
@@ -75,11 +86,13 @@
                     <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/calenderIcon.png" alt="">
                     <div style="display: flex; justify-content: space-between;">
                         <input type="date" placeholder="Start Date" id="date" value="date" style="outline: 0; border-width: 0 0 2px; border-color: grey; font-family: Poppins; font-size: 20px; font-weight: bold; color: grey;">
-                        <input type="text" readonly="" labelstyle="[object Object]" iconstyle="[object Object]" id="undefined-undefined-DURATION-14311" value=" 1, 3 or 6 Months" style="appearance: textfield; width: 40%; border-width: 0 0 2px; border-color: grey; outline: none; background-color: rgba(0, 0, 0, 0); color: rgb(39, 40, 49); cursor: inherit; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: 22px; line-height: inherit; font-family: Poppins; opacity: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 100%; box-sizing: border-box; margin-top: -5px;">
+                        <input type="text" readonly="" labelstyle="[object Object]" iconstyle="[object Object]" id="undefined-undefined-DURATION-14311" value=" 1, 3 or 6 Months" style="outline: 0; border-width: 0 0 2px; border-color: grey; appearance: textfield; width: 40%; outline: none; background-color: rgba(0, 0, 0, 0); color: rgb(39, 40, 49); cursor: inherit; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: 22px; line-height: inherit; font-family: Poppins; opacity: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box;">
                     </div>  
                 </div>
                 <div class="searchInput">
-                    <button type="button" class="search_btn" style="border-radius: 4px; background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171)); font-size: 18px; font-family: Poppins; font-weight: 700; height: 46px; width: 270px; margin: 20px; color: white;">SEARCH</button>
+                    <button type="button" class="search_btn" style="border: none; border-radius: 4px; background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171)); font-size: 18px; font-family: Poppins; font-weight: 700; height: 46px; width: 270px; margin: 20px; color: white;">
+                        Search<img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/searchButtonArrow.svg">
+                    </button>
                 </div>
             </div>
         </div>
@@ -174,22 +187,34 @@
 
     <div class="logos">
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/the-hindu-newpaper.webp">
+            <a href="https://www.thehindubusinessline.com/companies/selfdrive-startup-revv-to-hit-the-fastlane/article8673700.ece" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/the-hindu-newpaper.webp">
+            </a>
         </div>
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/The-Economic-Times.webp">
+            <a href="https://auto.economictimes.indiatimes.com/" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/The-Economic-Times.webp">
+            </a>
         </div>
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/Indian_express.webp">
+            <a href="https://www.financialexpress.com/industry/revv-launches-its-self-drive-car-rental-service-operations-in-chandigarh-with-25-cars/311864/" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/Indian_express.webp">
+            </a>
         </div>
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/BW-logo.png">
+            <a href="http://bwdisrupt.businessworld.in/article/Revv-Self-Driven-Cars-Delivered-to-Your-Doorstep-/24-05-2016-98356/" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/BW-logo.png">
+            </a>
         </div>
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/YourStory.png">
+            <a href="https://yourstory.com/2015/08/revv-self-drive-car-rental/amp" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/YourStory.png">
+            </a>
         </div>
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/businessinsider.png">
+            <a href="https://www.businessinsider.in/These-four-apps-will-ease-your-travel-woes-this-summer-vacation/articleshow/52292818.cms" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/businessinsider.png">
+            </a>
         </div>
     </div>
 
@@ -267,8 +292,8 @@
                 <div id="firstDiv">
                         <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" id="revLogo" alt="">
                         <ul>
-                            <li><a href="https://www.facebook.com/revvindia"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://twitter.com/revv_india?lang=en"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/revvindia" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/revv_india?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
                         </ul>
                         <p id="pLine">© 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved</p>
                 </div>

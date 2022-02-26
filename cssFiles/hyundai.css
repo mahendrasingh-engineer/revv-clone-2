@@ -93,11 +93,13 @@ ul li img {
 
 .main {
     width: 100%;
-    height: 109vh;
+    height: 700px;
     background-color: lightblue;
     display: flex;
-    justify-content: space-between;
-    background-image: url("../REVV.co.in/background.jpg")
+    gap: 30px;
+    background-image: url("../REVV.co.in/background.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 #searchbarContainer{
@@ -137,7 +139,7 @@ ul li img {
     border: 1px solid grey;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    color: rgba(0, 0, 0, 0.3);
+    color: black;
     font-size: 14px;
 }
 .startTime{
@@ -166,6 +168,8 @@ ul li img {
 }
 
 .searchBar {
+    flex: 1;
+    max-width: 40vw;
     margin-top: 120px;
     margin-left: 100px;
     background-color: white;
@@ -179,17 +183,22 @@ ul li img {
     width: 600px;
 }
 .exploreBar {
+    flex: 1;
+    max-width: 30vw;
     margin-top: 120px;
     padding: 0px 15px;
     background-color: white;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 150px;
+    /* padding-right: 150px; */
     height: 93px;
     background-color: #e7e7e7;
+}
+.exploreBar:hover {
+    cursor: pointer;
 }
 .searchTop {
     width: 332px;
@@ -197,14 +206,15 @@ ul li img {
 }
 #search {
     height: 257px;
-    width: 509.58px;
+    width: 90%;
 }
 .searchInput {
-    width: 479.58px;
+    width: 100%;
     height: 68px;
     margin: 0px 15px;
     background-color: white;
     display: flex;
+    flex-shrink: 1;
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
@@ -213,9 +223,23 @@ ul li img {
     height: 24px;
     width: 24px;
 }
+
+.searchInput button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.searchInput button img {
+    width: 14px;
+    height: 14px;
+}
+
 #date {
     height: 63px;
-    width: 202px;
+    width: 45%;
     font-size: 20px;
     font-family: Poppins;
     margin-left: 10px;
@@ -275,6 +299,10 @@ ul li img {
     font-family: 'Roboto', sans-serif;
     margin-left: 95px;
     font-weight: bold;
+}
+.faq_div p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 .faq_div, 
 .faq img {
