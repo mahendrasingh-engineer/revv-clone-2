@@ -1,3 +1,12 @@
+// var selectCity = document.querySelector("#city_search");
+// selectCity.addEventListener("click",function() {
+//   var searchBox = document.querySelector("#subContainer");
+//   var container = document.querySelector("#container");
+//   searchBox.style.display="block";
+//   container.style.display="flex";
+//   container.style.backgroungcolor="rgba(0,0,0,0.3)";
+// })      
+
 var searchbarContainer = document.getElementById("searchbarContainer")
         var searchBar = document.getElementById("searchBar");
         window.onscroll = function(){
