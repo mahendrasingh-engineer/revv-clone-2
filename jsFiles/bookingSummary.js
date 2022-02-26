@@ -38,3 +38,6 @@ himage.src = obj.Image;
 hfunction0.innerText = obj.function;
 hfeulType.innerText = obj.fuel_type;
 hseat.innerText = obj.seat + " seats";
+var copied = document.querySelector("#brand");
+var copied2 = document.querySelector("#bill > tbody > tr:nth-child(1) > td:nth-child(1)");
+copied2.innerText = "asdfgg";
