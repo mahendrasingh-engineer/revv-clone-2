@@ -337,3 +337,30 @@ ul li img {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+#lastTextFoter{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#lastTextFoter p,.lastH2{
+    text-align: left;
+    text-align: justify;
+    margin-left: 120px;
+    font-family: 'poppins';
+    margin-right: 10px;
+}
+#lastTextFoter p{
+   font-size: 14px;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+.lastH2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #1b1c24;   
+}
+b{
+    font-weight: bolder;
+}
