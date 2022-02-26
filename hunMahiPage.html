@@ -9,6 +9,36 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
+
+ <!-- Nav Creation -->
+ <div class="navbar">
+    <div class="logo">
+        <img id="logoImage1" src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" >
+        <p id="sanitisedL" >Sanitised.Safe</p>
+        <p class="break">|</p>
+        <b class="title">Mahindra</b>
+        <p class="title_1">Subscription</p>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="">FAQs</a></li>
+            <li><img id="img" src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"></li>
+            <li><a href="">Login or Signup</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
      
     <!-- car and filter  blog creation for Hyundai and Mahindra Scription -->
 
@@ -28,18 +58,18 @@
                </select>
                 
                <p class="searchP">Search</p>
-               <input id="search" type="text" placeholder="Search bY Car Model">
+               <input  onkeyup="searchFun()" id="search" type="text" placeholder="Search bY Car Model">
                <br>
                <p class="searchP">Price Range</p>
-               <Select id="startRange">
+               <Select id="startRange" onchange="byRange()">
+                   <option value="15000">₹ 15000</option>
                    <option value="20000">₹ 20000</option>
                    <option value="25000">₹ 25000</option>
-                   <option value="30000">₹ 20000</option>
                </Select>
-               <select name="" id="endRange">
-                <option value="25000">₹ 20000</option>
-                <option value="30000">₹ 20000</option>
-                <option value="40000">₹ 20000</option>
+               <select name="" id="endRange" onchange="byRange()">
+                <option value="20000">₹ 20000</option>
+                <option value="30000">₹ 30000</option>
+                <option value="40000">₹ 40000</option>
                </select>
 
                <!-- checkbox filter creation for car -->
@@ -49,14 +79,14 @@
                 <div id="segmentDiv">
                      <h2 id="segTitle">Segment</h2>
                      <div>
-                     <input type="checkbox">
+                     <input type="checkbox" id="hatch" value="Hatchback" onchange="filHatch()">
                      <h3>Hatchback</h3>
                     </div>
                      <div>
-                     <input type="checkbox">
+                     <input type="checkbox" id="sedan" value="Sedan" onchange="filSedan()">
                      <h3>Sedan</h3></div>
                      <div>
-                     <input type="checkbox">
+                     <input type="checkbox" id="suv" value="SUV" onchange="filSUV()">
                      <h3>SUV/MUV</h3></div>
                      
             
@@ -66,11 +96,11 @@
                  <div id="segmentDiv">
                   <h2 id="segTitle">Fuel Type</h2>
                   <div>
-                  <input type="checkbox">
+                  <input type="checkbox" onchange="filFun('Diesel')">
                   <h3>Diesel</h3>
                  </div>
                   <div>
-                  <input type="checkbox">
+                  <input type="checkbox" onchange="filFun('Petro')">
                   <h3>Petrol</h3>
                   </div>
                   
@@ -80,11 +110,11 @@
                <div id="segmentDiv">
                 <h2 id="segTitle">Transmission Type</h2>
                 <div>
-                <input type="checkbox">
+                <input type="checkbox" onchange="filFun('Automatic')">
                 <h3>Automatic</h3>
                </div>
                 <div>
-                <input type="checkbox">
+                <input type="checkbox" onchange="filFun('Manual')">
                 <h3>Manual</h3>
                 </div>
                 
@@ -115,10 +145,10 @@
                         </div>
                         <div id="sortBy">
                             <p>SortBy:</p>
-                            <select id="sorting">
-                                <option value="soryby"></option>
-                                <option value="pl2h">Price: Low to High</option>
-                                <option value="ph2l">Price: High to Low</option>
+                            <select onchange="sortFun()" id="sorting">
+                                <option value=""></option>
+                                <option value="l2h">Price: Low to High</option>
+                                <option value="h2l">Price: High to Low</option>
                             </select>
                             
                         </div>

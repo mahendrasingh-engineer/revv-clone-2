@@ -8,7 +8,34 @@
     <link rel="stylesheet" href="./cssFiles/brandNewCar.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
-<body>
+<body onload="show()">
+
+
+ <!-- Nav Creation -->
+ <div class="navbar">
+    <div class="logo">
+        <img id="logoImage1" src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" >
+        <p id="sanitisedL" style="margin-top:40px; margin-left: 130px; font-size: 12px; font-family: Poppins; position: absolute;">Sanitised.Safe</p>
+        <p class="break">|</p>
+        <b class="title">Hyundai</b>
+        <p class="title_1">Subscription</p>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="">FAQs</a></li>
+            <li><img id="img" src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"></li>
+            <li><a href="">Login or Signup</a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
      
     <!-- car and filter  blog creation for Hyundai and Mahindra Scription -->
 
@@ -28,18 +55,18 @@
                </select>
                 
                <p class="searchP">Search</p>
-               <input id="search" type="text" placeholder="Search bY Car Model">
+               <input onkeyup="searchFun()" id="search" type="text" placeholder="Search bY Car Model">
                <br>
                <p class="searchP">Price Range</p>
-               <Select id="startRange">
-                   <option value="20000">20000</option>
-                   <option value="25000">25000</option>
-                   <option value="30000">30000  </option>
+               <Select id="startRange" onchange="byRange()">
+                   <option value="20000"> ₹ 20000</option>
+                   <option value="25000">₹ 25000</option>
+                   <option value="30000">₹ 30000  </option>
                </Select>
-               <select name="" id="endRange">
-                <option value="25000">20000</option>
-                <option value="30000">30000</option>
-                <option value="40000">40000</option>
+               <select name="" id="endRange" onchange="byRange()">
+                <option value="25000">₹ 20000</option>
+                <option value="30000"> ₹ 30000</option>
+                <option value="40000">₹ 40000</option>
                </select>
 
                <!-- checkbox filter creation for car -->
@@ -115,7 +142,7 @@
                         </div>
                         <div id="sortBy">
                             <p>SortBy:</p>
-                            <select id="sorting">
+                            <select onchange="sortFun()" id="sorting">
                                 <option value="soryby"></option>
                                 <option value="pl2h">Price: Low to High</option>
                                 <option value="ph2l">Price: High to Low</option>
@@ -127,15 +154,80 @@
                 <div id="result">
                     <h1 id="resultTag">3 Unboxed Mahindra cars for subscription in Ahmedabad</h1>
                 </div>
-                 <div id="Cars">
-        
 
+                 <div id="Cars">
+
+                    
                     <div>
                         <img id="adsImage" src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/Open/prop-cards/destkop/safe.svg" alt="">
                     </div>
+ 
+                  <!-- one creation -->
+
+                    <div id="hundaiElite">
+                          <div id="hunName">
+                               <img src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/Hyundai_elite_i20.jpg" alt="">
+                               <div id="detail">
+                                   <h2>Hyundai Elite i20</h2>
+                                   <p>Brand New /6 Varients</p>
+                               </div>
+                          </div>
+
+                          <div id="varient">
+                            
+                               
 
 
-                 </div>
+
+
+
+                            <span class="arrow-right" onClick="moveLeft()"><img src="https://www.revv.co.in/grapheneImages/CarsAndPricing/slider-prev-arrow.svg" alt=""></span>
+                            <span class="arrow-left" onClick="moveRight()"><img src="https://www.revv.co.in/grapheneImages/CarsAndPricing/slider-next-arrow.svg" alt=""></span>
+                          </div>
+                    </div>
+    
+                    <!-- two creation -->
+                  
+                 <div id="hundaiSantro">
+                        
+                    <div id="hunName">
+                         <img src="https://s3-us-west-2.amazonaws.com/revvselfdrivecar/Open/Hatchback_new/hyundai_santro.jpg" alt="">
+                         <div id="detail">
+                             <h2>Hyundai Santro</h2>
+                             <p>Brand New /3 Varients</p>
+                         </div>
+                    </div>
+
+                    <!-- <div id="varientTwo">
+                      
+                         
+
+
+
+
+
+                      <span class="arrow-right" onClick="moveLeft()"><img src="https://www.revv.co.in/grapheneImages/CarsAndPricing/slider-prev-arrow.svg" alt=""></span>
+                      <span class="arrow-left" onClick="moveRight()"><img src="https://www.revv.co.in/grapheneImages/CarsAndPricing/slider-next-arrow.svg" alt=""></span>
+                    </div> -->
+              </div>
+          
+              <div id="hundaiSantro">
+                        
+                <div id="hunName">
+                     <img src="https://revvselfdrivecar.s3-us-west-2.amazonaws.com/carImages/new_images/Hyundai_Aura.jpg" alt="">
+                     <div id="detail">
+                         <h2>Hyundai Aura</h2>
+                         <p>Brand New /3 Varients</p>
+                     </div>
+                </div>
+                </div>
+
+
+
+
+
+                </div>
+
            </div>
 
     </div>
@@ -197,7 +289,7 @@
 
     
 </body>
-<script src="./Data/unBoxedCar.js"></script>
+<script src="./Data/newCarData.js"></script>
 <script src="./jsFiles/brandNewCar.js"></script>
 </html>
 
