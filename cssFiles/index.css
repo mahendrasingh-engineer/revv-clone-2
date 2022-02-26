@@ -172,6 +172,7 @@
 
 .top{
     width: 90%  ;
+    min-width: 314px;
     /* height: 78px; */
     margin: auto auto 32px;
     margin-bottom: 32px;
@@ -805,7 +806,9 @@ h3{
     #right>div{
         margin: 0 10px;
     }
-    #leftContainer{
-        width: 500px;
-    }
+    /* #leftContainer{
+        
+    } */
 }
+
+
