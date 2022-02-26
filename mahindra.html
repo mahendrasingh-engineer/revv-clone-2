@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.revv.co.in/grapheneImages/newopen/logo.svg" type="image/x-icon">  
 </head>
 <body>
     <div class="navbar">
@@ -25,10 +26,33 @@
         <div class="menu">
             <ul>
                 <li><a href="">How it works</a></li>
-                <li><a href="">FAQs</a></li>
+                <li><a href="./faq.html">FAQs</a></li>
                 <li><img id="img" src="https://www.revv.co.in/grapheneImages/newopen/ic-web-profile-login.svg"></li>
-                <li><a href="">Login or Signup</a></li>
+                <li><a href="./login.html">Login or Signup</a></li>
             </ul>
+        </div>
+    </div>
+
+    <div class='responsive-nav'>
+        <div class='nav-images'>
+            <div>
+                <img src='https://www.revv.co.in/imgs/ic-back.svg'>
+                <div class='nav-image-logo'>
+                    <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/revvLogoWhite.png">
+                    <p>Sanitised. Safe</p>
+                </div>
+            </div>
+            <div class="nav-image-mahi">
+                <img src="https://www.revv.co.in/grapheneImages/hyundai/logo-mahindra-sub-mob@2x.png">
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <div>
+                By the Month
+            </div>
+            <div>
+                By the Year
+            </div>
         </div>
     </div>
 
@@ -38,26 +62,13 @@
             <div class="locationIcon">
               <i class="fa-solid fa-location-dot"></i>
             </div>
-            <div class="cityBox">Select City</div>
+            <div class="cityBox"><p style="color: rgba(0, 0, 0, 0.3);">City</p>Select City</div>
           </div>
           <div class="startTime">Start Date</div>
           <div class="endTime"><p style="color: rgba(0, 0, 0, 0.3);">Duration</p>1,2,3 or 6 Month</div>
           <div class="search">Search</div>
         </div>
     </div>
-    <script>
-        var searchbarContainer = document.getElementById("searchbarContainer")
-        var searchBar = document.getElementById("searchBar");
-        window.onscroll = function(){
-          if(window.pageYOffset >= 582){
-            searchBar.style.display="grid";
-            searchbarContainer.style.display= "block";
-          } else {
-            searchBar.style.display="none";
-            searchbarContainer.style.display= "none"; 
-          }
-        }
-      </script>
 
     <div class="main">
         <div class="searchBar">
@@ -75,11 +86,13 @@
                     <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/calenderIcon.png" alt="">
                     <div style="display: flex; justify-content: space-between;">
                         <input type="date" placeholder="Start Date" id="date" value="date" style="outline: 0; border-width: 0 0 2px; border-color: grey; font-family: Poppins; font-size: 20px; font-weight: bold; color: grey;">
-                        <input type="text" readonly="" labelstyle="[object Object]" iconstyle="[object Object]" id="undefined-undefined-DURATION-14311" value=" 1, 3 or 6 Months" style="appearance: textfield; width: 40%; border-width: 0 0 2px; border-color: grey; outline: none; background-color: rgba(0, 0, 0, 0); color: rgb(39, 40, 49); cursor: inherit; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: 22px; line-height: inherit; font-family: Poppins; opacity: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 100%; box-sizing: border-box; margin-top: -5px;">
+                        <input type="text" readonly="" labelstyle="[object Object]" iconstyle="[object Object]" id="undefined-undefined-DURATION-14311" value=" 1, 3 or 6 Months" style="outline: 0; border-width: 0 0 2px; border-color: grey; appearance: textfield; width: 40%; outline: none; background-color: rgba(0, 0, 0, 0); color: rgb(39, 40, 49); cursor: inherit; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: 22px; line-height: inherit; font-family: Poppins; opacity: 1; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-sizing: border-box;">
                     </div>  
                 </div>
                 <div class="searchInput">
-                    <button type="button" class="search_btn" style="border-radius: 4px; background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171)); font-size: 18px; font-family: Poppins; font-weight: 700; height: 46px; width: 270px; margin: 20px; color: white;">SEARCH</button>
+                    <button type="button" class="search_btn" style="border: none; border-radius: 4px; background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171)); font-size: 18px; font-family: Poppins; font-weight: 700; height: 46px; width: 270px; margin: 20px; color: white;">
+                        Search<img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/searchButtonArrow.svg">
+                    </button>
                 </div>
             </div>
         </div>
@@ -96,7 +109,7 @@
     </div>
     
     <div class="howItWork">
-        <p style="font-size: 28px; font-family: Poppins; margin-bottom: 20px; color: rgb(27, 28, 36); font-weight: 800; text-align: left;">How it works</p>
+        <div class="howItWorkHead">How it works</div>
         <div id="work" style="display: flex; gap: 40px;">
             <div>
                 <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAREBUPDxAVFRUVDxAPEBAVDxEQFRIXFRYWFxUSFRUYHSggGBolHhUWITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OFQ0NFysZFRktKysrLS0wKystKys3LS0rKysrLS0tNysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAwADAQEAAAAAAAAAAAAAAQIGBQcIBAP/xABGEAACAQICBAYOBwYHAAAAAAAAAQIDBAURBhIhVAcXMVGU0hMVNUFVYXF0gZGjpMHhFCJSs9HT8BYlMjST8SNEcqGisbL/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AO6QAVAiMs/XkVky0QJAAAAAACGwJBXIlMCQAAAAAAACIvNZlWy0QJAAAAAACrYFgVyJTAkAACkpFpIiMQEYlgAAAAAAAVXxLENAP15QkEiQAAAAAAUk8y0lmiIrvgIosAAAAAAACsSxDQD9IJBIkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABDYEgrl5SUwJAAAAAAY3EtNpyuJ2eFWcr2rTerXqKpGjb0X34yqvY5LmXM9ux5V7a6Q+DLTp/yA2hEXmZCGJY619bD7ZPbyXmfk8vj+JR4npAuTDLXLx33yA2YMX200h8GWnT/kO2mkPgy06f8AIDaAxfbTSHwZadP+Q7aaQ+DLTp/yA2gMX200h8GWnT/kT20x/V7m2ueeSSvu9z55AbMGLp4npBntwy1Sz25X2eXkWW0/NacV7WpGnjFi7WE5qFO8p1VcW+b5FUaWdP0+PvJsK3AIT5iQgAAAAAERee0q3/YtECQAAKr5liGgASCRIAAADhdNcQnb4ddXFJ5Tha1ZU5fZlqtRl6G0/Qc0ZrhL7kXvms/gB+ugWE07TDbajTS20KdWpL7dSpFSnNvyv1JLvHOt5mGwrhIwiFtRpzu8pRoUYSX0e4eUowims1DnR9S4TsG5fpfu9x1ArYRiWMdxn4Nvnu9x1CVwn4Pvfu9x1ANgDH8Z+Db37vcdQjjPwbfPd7jqAxsQY7jPwbfPd7jqDjPwbe/d7jqAxsSsTIvhPwfe/d7jqEPhOwbfPd7jqAbD9ZHzYnh1K5o1LatHWhVg6c14n31zNcqfeaRmFwn4Nvnu9z1C0eE/Bt793uOoBHBNdVJ4VShVlrSozrWmtzxo1JRh6o6q9BsDEcD01LDXJcjvbySfOnUbTNuEAAAbKN5lpIiKARRYAAAAAAAAAAAABm+EjuTeZ7tP4GkM1wlP90Xnms/gB5mbB2PZ8D17Vpwqq5t0p04VEn2XNKUVJJ/V5dp+3Etfb1b+26pG9dZA7N4lr7erf23VHEtfb1b+26oNdacvl/7+ZU7N4lb7erf23VJfAvev/NW+fP8A423/AIg11iSlltfoXxZ2auBa93q39t1SHwLX29W/tuqDXWTYOzeJa+3q39t1RxLX29W/tuqDXWQTOzeJa+3q39t1QuBW+3q39t1Qa23Ap3Jh5xcf+zdmG4Gabjhag+WN3dRb/wBNRr4G5KzQABAAAAAAAAAAAAAAAAAzPCX3HvfNZ/A0xmuEpfui981n8AOWwD+Ut/NaH3cT7z4MA/lLfzWh93E4HENFL2pVnUhjV1TjKcpxpRp0XGmm81COzkXIBrQYv9jb/wAPXn9OiP2Nv/D15/TogbQGLWht/wCHrv8Ap0TQaPYZWtqbhXvKt1JzclUqxhGUVklqLV72xv0gcoAAAPjxm6lRtq1aOWtTt61WKfJnCEpLPxZo83vT7F3teIVtu3Z2NL0JRyQWR6cJjy+k8xcYOLw+ur+q3H6yUuxyTy25NOO1Hpi0qOUITfLKEJNeVJgsY7gi7nS8+vfvWbUxXBF3Ol59e/es2oQAAAAAAAAAAAAACIvP1lXItFASAABmuEvuRe+az+BpTgNP7WdXC7ynTTcnaVtWKWbbjHWyS77eQHI4D/KW/mtD7uJncQ4TsHoVZ0K13q1KdSVKpH6Pcy1ZReUlmoZPJp8hy+ht/C4w+1rU3nGVrRXKnlKMVGcX41JNeg5aUU+8vUgMVxt4Hvr6LdfljjbwPfX0W6/LNp2KP2V6kSoL7K9SAxXG3ge+vot1+WONvA99fRbr8s22ouZepDUXMvUgMTxt4Hvr6LdflmrwbFqF3Qhc209elPW1J6soZ6snF7JJNbU1yH16i5l6kWQHw47QlUta9KCzlO2r04LkzlKnJRXraPLTwi6Wx2lwmtjTtqyafM1qnrMawWV5M7S3c/qQtK7lL6sV9Hq7W9iX8J6tsItU6cZLJqEItZ57UkmXcmVr3EKVOVWpJRhCEqk5N5KMYrNtvyIFrH8Eb/d0vPr371m1MXwQ05dqqdSUXHs1e6uIxfLqzqy1X6Us/SjaBAAAACvL+uUCwK5EpgSAABSUsyzRCjzgIosAAAAAAAYWporf2NWdXBK1LsVSbqVMOuFPsMZPllRnHbDP7PJ6Ekv2lf6Q7MrGy5M3ndVFt76XiNoQ0Bk4X2OtNysrPPbqwV1N5+WXyPnV/pFuFj0up+BtEiQMX2w0j3Cx6XU/AdsNI9wsel1PwNoAMX2w0j3Cx6XU/AdsNI9wsel1PwNoAMU8Q0i3Cx6XU/AvSv8AH3/FZWa2965nLZz+s2MlmIoDGSvtIU3q2Fllnszu6meR81xo7iuJNU8VrUaFrrJztLRzc6+TT1atWXJHZyL/AGeTW9AH50KMacI06cVGMYxhCEVkoxisoxS7ySWR+gAAAACsSxDQAlIJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVgWBXVJTAkAAAAAADYAiLzKtlooCQAAAAAArygWBXVJTAkAAAAAAIkwIk+Ysj80v7n6AAAAKliGgHlCQSJAAAAAADKOX9izREYgTFEgAAAAAAAqixDQAlEJEgAAAAAESZVbS0lmSkBCRIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k=">
@@ -124,16 +137,17 @@
     <div class="FAQs">
         <div class="faq">FAQs</div>
         <div class = "faq_div" style="display: flex;">
-            <img src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
-            <p style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px;">What are my liabilities in case of damage / accident of the Mahindra car?</p>
+            <img class="plusIcon" src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
+            <p class="para" style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px;">What are my liabilities in case of damage / accident of the Mahindra car?</p>
         </div>
         <div class="faq_hidden" style="display: none; margin-left: 125px; margin-right: 120px;">
+            <img class="minusIcon" src="https://www.revv.co.in/grapheneImages/summary-page/minus-icon.png" alt="" style="display: none; margin-left: -28px; position: absolute; margin-top: -33px;">
             <p style="font-size:14px; font-family: Poppins; color: grey;">Your Mahindra car will be covered by comprehensive insurance, to take care of damage cases. In case of damage, your liability would be limited to the difference between the costs incurred to repair the damage and the proceeds from insurance claim with maximum liability limited to INR 10,000. In situations of irresponsible or unsafe or negligent usage, there could be discretionary exceptions to this policy, whereby you could be liable for all damages irrespective of whether we are able to claim insurance in such cases.</p>
         </div>
         <hr style="margin-left: 125px; margin-right: 120px; margin-top: 15px">
         <div class = "faq_div" style="display: flex;">
-            <img src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
-            <p style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px;">Can I end my Mahindra car subscription early, or choose to keep the car longer?</p>
+            <img class="plusIcon" src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
+            <p class="para" style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px;">Can I end my Mahindra car subscription early, or choose to keep the car longer?</p>
         </div>
         <div class="faq_hidden" style="display: none; margin-left: 125px; margin-right: 120px;">
             <p style="font-size:14px; font-family: Poppins; color: grey;">Yes, you can extend the car subscription anytime at normal prices. If you wish to return the car; you can do so anytime by just paying the fee difference.</p>
@@ -142,24 +156,24 @@
         </div>
         <hr style="margin-left: 125px; margin-right: 120px; margin-top: 15px">
         <div class = "faq_div" style="display: flex;">
-            <img src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
-            <p style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px;">Are there any restrictions on what can I use the Mahindra car for?</p>
+            <img class="plusIcon" src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
+            <p class="para" style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px;">Are there any restrictions on what can I use the Mahindra car for?</p>
         </div>
         <div class="faq_hidden" style="display: none; margin-left: 125px; margin-right: 120px;">
             <p style="font-size:14px; font-family: Poppins; color: grey;">You can use the Mahindra car you have subscribed to for pretty much all the normal requirements. Abnormal usage (e.g., speed racing, towing/pushing/propelling, transportation of goods or people on commercial basis, transportation of large/heavy/hazardous items) is not allowed.</p>
         </div>
         <hr style="margin-left: 125px; margin-right: 120px; margin-top: 15px">
         <div class = "faq_div" style="display: flex;">
-            <img src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
-            <p style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px;">What are the benefits of Mahindra Subscriptions?</p>
+            <img class="plusIcon" src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
+            <p class="para" style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px;">What are the benefits of Mahindra Subscriptions?</p>
         </div>
         <div class="faq_hidden" style="display: none; margin-left: 125px; margin-right: 120px;">
             <p style="font-size:14px; font-family: Poppins; color: grey;">No upfront payments such as down payment or road tax, flexibility of subscribing for min. 1 month and extending or returning anytime, insurance and maintenance included in monthly fees, 24X7 roadside assistance and hassle-free service & maintenance are just a few benefits of Revv Mahindra Subscriptions.</p>
         </div>
         <hr style="margin-left: 125px; margin-right: 120px; margin-top: 15px">
         <div class = "faq_div" style="display: flex;">
-            <img src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
-            <p style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px;">What will be the car registration type and whose name will it be registered in?</p>
+            <img class="plusIcon" src="https://www.revv.co.in/grapheneImages/summary-page/plus-icon.png" alt="" style="height: 14px; width: 14px; margin-top: 23px; margin-bottom: 21px; margin-left: 95px;">
+            <p class="para" style="color: rgb(27,28,36); margin-left: 15px; font-size: 18px; margin-top: 21px; margin-bottom: 21px; font-size: 18px;">What will be the car registration type and whose name will it be registered in?</p>
         </div>
         <div class="faq_hidden" style="display: none; margin-left: 125px; margin-right: 120px;">
             <p style="font-size:14px; font-family: Poppins; color: grey;">The car will be registered as a premium commercial vehicle (black plate) with an All India permit and can be driven anywhere within India without any concerns. It will be registered in the name of Revv (PrimeMover Mobility Technologies Pvt. Ltd.) or its supply partners.</p>
@@ -169,49 +183,47 @@
             <button style="height: 35px; width: 152px; margin-left: 95px; margin-top: 70px; margin-bottom: 50px; font-family: Poppins; color: rgb(28, 171, 162); font-weight: bold; font-size: 14px;">View All</button>
         </div>
     </div>
-    <script>
-        // const faqs_div = document.querySelectorAll(".faq_div")
-        // const faq_hidden = document.querySelectorAll(".faq_hidden")
-        // // console.log(faq_hidden[1])
-        // faqs_div.forEach(function(elem,index) {
-        //     elem.addEventListener("click", function() {
-        //         // console.log(faqs_div[index])
-        //         display(index)
-        //     })
-        // })
-
-        // function display(index) {
-        //     // console.log(faq_hidden)
-        //     // console.log(faq_hidden[index])
-        //     faq_hidden[index].style.display = 'block'
-        // }
-    </script>
 
 
     <div class="logos">
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/the-hindu-newpaper.webp">
+            <a href="https://www.thehindubusinessline.com/companies/selfdrive-startup-revv-to-hit-the-fastlane/article8673700.ece" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/the-hindu-newpaper.webp">
+            </a>
         </div>
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/The-Economic-Times.webp">
+            <a href="https://auto.economictimes.indiatimes.com/" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/The-Economic-Times.webp">
+            </a>
         </div>
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/Indian_express.webp">
+            <a href="https://www.financialexpress.com/industry/revv-launches-its-self-drive-car-rental-service-operations-in-chandigarh-with-25-cars/311864/" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/Indian_express.webp">
+            </a>
         </div>
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/BW-logo.png">
+            <a href="http://bwdisrupt.businessworld.in/article/Revv-Self-Driven-Cars-Delivered-to-Your-Doorstep-/24-05-2016-98356/" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/BW-logo.png">
+            </a>
         </div>
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/YourStory.png">
+            <a href="https://yourstory.com/2015/08/revv-self-drive-car-rental/amp" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/YourStory.png">
+            </a>
         </div>
         <div>
-            <img src="https://www.revv.co.in/imgs/company_logo/businessinsider.png">
+            <a href="https://www.businessinsider.in/These-four-apps-will-ease-your-travel-woes-this-summer-vacation/articleshow/52292818.cms" target="_blank">
+                <img src="https://www.revv.co.in/imgs/company_logo/businessinsider.png">
+            </a>
         </div>
     </div>
 
     <div class="journey">
         <div class="ourJourney">
-            <h2>Our journey so far</h2>
+            <div class="headingJourney" style="display: flex;">
+                <h2>Our journey</h2>
+                <h2 style="color: grey; margin-left: 5px;">so far</h2>
+            </div>
             <div class="journeyLogo">
                 <div>
                     <img src="https://www.revv.co.in/grapheneImages/newopen/ic-happy-cus.svg" alt="">
@@ -236,6 +248,76 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+
+    <div id="firstFoter">
+        <div id="cityService">
+          <div>
+              <h2>Top 7 Hyundai Car Subscription Cities</h2>
+              <p><a href="">Hyundai Car Subscription in Bangalore</a></p>
+              <p><a href="">Hyundai Car Subscription in Hyderabad</a></p>
+              <p><a href="">Hyundai Car Subscription in Mumbai</a></p>
+              <p><a href="">Hyundai Car Subscription in Delhi-NCR</a></p>
+              <p><a href="">Hyundai Car Subscription in Chennai</a></p>
+              <p><a href="">Hyundai Car Subscription in Pune</a></p>
+              <p><a href="">Hyundai Car Subscription in Kolkata</a></p>
+          </div>
+          <div>
+            <h2>Top 7 Mahindra Car Subscription Cities</h2>
+            <p><a href="">Mahindra Car Subscription in Bangalore</a></p>
+            <p><a href="">Mahindra Car Subscription in Hyderabad</a></p>
+            <p><a href="">Mahindra Car Subscription in Mumbai</a></p>
+            <p><a href="">Mahindra Car Subscription in Delhi-NCR</a></p>
+            <p><a href="">Mahindra Car Subscription in Pune</a></p>
+            <p><a href="">Mahindra Car Subscription in Kolkata</a></p>
+            <p><a href="">Mahindra Car Subscription in Ahmedabad</a></p>
+          </div>
+          <div>
+            <h2>Top 7 Revv Car Subscription Cities</h2>
+            <p><a href="">Revv Car Subscription in Bangalore</a></p>
+            <p><a href="">Revv Car Subscription in Hyderabad</a></p>
+            <p><a href="">Revv Car Subscription in Mumbai</a></p>
+            <p><a href="">Revv Car Subscription in Delhi-NCR</a></p>
+            <p><a href="">Revv Car Subscription in Chennai</a></p>
+            <p><a href="">Revv Car Subscription in Pune</a></p>
+            <p><a href="">Revv Car Subscription in Kolkata</a></p>
+          </div>
+        </div> 
+      </div>
+
+      <!-- Midddle foter creation  -->  
+        <div id="midFoter">
+        <div id="midDivFot">
+                <div id="firstDiv">
+                        <img src="https://www.revv.co.in/grapheneImages/newopen/logo.svg" id="revLogo" alt="">
+                        <ul>
+                            <li><a href="https://www.facebook.com/revvindia" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://twitter.com/revv_india?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                        <p id="pLine">© 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved</p>
+                </div>
+                <div id="thirdDiv">
+                    <h3 id="h3">Have Questions?</h3>
+                    <h3 id="contact">+91-8929596126</h3>
+                    <h4 id="h4">24/7 Customer Support</h4>
+                    <br>
+                    <h2 id="h2">care@revv.co.in</h2>
+                </div>
+        </div>
+        </div>
+
+        <!-- last text foter creation -->
+        <div id="lastTextFoter">
+            <h2  class="lastH2"> <b>Revv Mahindra Subscription – Sanitized, safe, self-drive cars for your comfort</b></h2>
+            <p>Buying a car is a decision that comes with a lot of hassles, as well as various costs that you have to bear to have the ownership of the vehicle. To save yourself from all of these and still getting all the benefits of owning your favorite Mahindra car, an easy way out is to subscribe to the Mahindra cars subscription by Revv model. The cars are sterilized according to the guidelines specified by the World Health Organization (WHO) and the best practices in the automobile industry. This enables us to provide you with safe and sanitized Mahindra cars subscription. The cars which are part of the Mahindra subscription plan look as good as new with less than 2 years old driving history. The Revv Mahindra subscription cars are completely sanitized to make sure that they are free from any dirt, contaminants, or odour. The sanitized Mahindra cars for subscription by Revv are also fully checked for maintenance issues so that they do not cause any interruption in your routine.</p>
+            <br>
+            <h2 class="lastH2"> <b>Freedom and flexibility</b></h2>
+            <p>You can choose to use the Mahindra subscription car by Revv any way you wish. You can even share the car with a friend or relative, however, the liability of the usage of the car will still be yours. The commercial usage of the vehicle or sub-renting will not be allowed. If you want to go for a different Revv Mahindra subscription model anytime, it can be done, and the monthly subscription fee will be adjusted accordingly. You can take the car outstation for short road trips without any hassle of any sorts.</p>
+            <br>
+            <h2 class="lastH2"> <b>Ease of use</b></h2>
+            <p>The network of Revv is available in almost all metro cities to provide the customers with an affordable and smart option to commute. Revv Mahindra cars subscription in Mumbai, Delhi, Bangalore, Pune, Chennai, Hyderabad and in 18 more cities in India is highly reviewed and popular amongst the new and old car owners who are realizing an easier way of car ownership. The cars will be delivered right at your doorstep so that you do not have to take out time especially for getting the ride. There is a zero down payment to be made, and you can get started with the self-drive Mahindra car subscription to take the car home with only a refundable deposit of INR 5000, and one month’s subscription fee in advance. You even have the option of returning the car under the Mahindra car subscription model anytime by paying the pre-closure amount.</p>    
+        </div>
 
 </body>
 <script src="./jsFiles/mahindra.js"></script>

@@ -93,11 +93,13 @@ ul li img {
 
 .main {
     width: 100%;
-    height: 109vh;
+    height: 700px;
     background-color: lightblue;
     display: flex;
-    justify-content: space-between;
-    background-image: url("../REVV.co.in/background.jpg")
+    gap: 30px;
+    background-image: url("../REVV.co.in/background.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 #searchbarContainer{
@@ -137,7 +139,7 @@ ul li img {
     border: 1px solid grey;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    color: rgba(0, 0, 0, 0.3);
+    color: black;
     font-size: 14px;
 }
 .startTime{
@@ -166,6 +168,8 @@ ul li img {
 }
 
 .searchBar {
+    flex: 1;
+    max-width: 40vw;
     margin-top: 120px;
     margin-left: 100px;
     background-color: white;
@@ -179,17 +183,22 @@ ul li img {
     width: 600px;
 }
 .exploreBar {
+    flex: 1;
+    max-width: 30vw;
     margin-top: 120px;
     padding: 0px 15px;
     background-color: white;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 150px;
+    /* padding-right: 150px; */
     height: 93px;
     background-color: #e7e7e7;
+}
+.exploreBar:hover {
+    cursor: pointer;
 }
 .searchTop {
     width: 332px;
@@ -197,14 +206,15 @@ ul li img {
 }
 #search {
     height: 257px;
-    width: 509.58px;
+    width: 90%;
 }
 .searchInput {
-    width: 479.58px;
+    width: 100%;
     height: 68px;
     margin: 0px 15px;
     background-color: white;
     display: flex;
+    flex-shrink: 1;
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
@@ -213,9 +223,23 @@ ul li img {
     height: 24px;
     width: 24px;
 }
+
+.searchInput button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.searchInput button img {
+    width: 14px;
+    height: 14px;
+}
+
 #date {
     height: 63px;
-    width: 202px;
+    width: 45%;
     font-size: 20px;
     font-family: Poppins;
     margin-left: 10px;
@@ -230,6 +254,14 @@ ul li img {
 .howItWork {
     padding: 60px 15px 30px;
     margin-left: 90px;
+}
+.howItWorkHead {
+    height: 36.59px;
+    width: 960px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 #work div {
     height: 283px;
@@ -268,6 +300,10 @@ ul li img {
     margin-left: 95px;
     font-weight: bold;
 }
+.faq_div p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
 .faq_div, 
 .faq img {
     cursor: pointer;
@@ -299,7 +335,7 @@ ul li img {
 }
 
 .journey {
-    margin: 0px 21px;
+    /* margin: 0px 21px; */
     padding: 60px 0px 30px;
     background-color: whitesmoke;
 }
@@ -323,4 +359,154 @@ ul li img {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+/* first foter creation */
+
+#firstFoter{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(42,43,54);
+    padding: 60px 0;
+}
+
+#cityService
+{
+    display: flex;
+      width: 100%;
+    justify-content: space-around;
+
+}
+#cityService h2 {
+    font-size: 16px;
+    font-family: 'Poppins' , sans-serif;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+#cityService a{
+    text-decoration: none;
+    color: rgb(124,125,131);
+    font-size: 13px;
+    font-family: 'poppins';
+    font-weight: bold;
+}
+#cityService>div a:hover{
+    color: whitesmoke;
+}
+#cityService p{
+    text-align: left;
+    text-align: justify;
+    margin-top: 0px;
+    margin: 15px 0;
+}
+
+/* middle fotter creation */
+
+#midFoter{
+    width: 100%;
+    height: 270px;
+}
+#midDivFot
+{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(61,66,80);
+}
+#firstDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+#firstDiv img {
+    margin-top: 30px;
+}
+#firstDiv li{
+    list-style: none;
+    
+}
+#firstDiv ul{
+    display: flex;
+    gap: 10px;
+}
+#firstDiv i{
+    font-size:26px;
+    text-align: center;
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#0EBABA;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#firstDiv>img{
+    width: 105px;
+    height: 75px;
+}
+
+#h3,#h4{
+    color: #FFF;
+    font-family: 'Poppins';  
+    text-align: justify;
+    margin-left: 40px;
+}
+#h4 {
+    font-weight: lighter;
+}
+#h3 {
+    font-size: 24px;
+}
+#contact {
+    font-weight: lighter;
+    font-size: 24px;
+    color: #0EBABA;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#h2{
+    color: #0EBABA;
+    font-family: 'poppins';  
+    text-align: justify;
+    margin-left: 40px;
+}
+#pLine{
+    text-align: left;
+    color: #fff;
+    font-size: 10px;
+    font-family: 'poppins';
+}
+
+#lastTextFoter{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px 0;
+}
+#lastTextFoter p,.lastH2{
+    text-align: left;
+    text-align: justify;
+    margin-left: 120px;
+    font-family: 'poppins';
+    margin-right: 10px;
+}
+#lastTextFoter p{
+   font-size: 14px;
+    margin-right: 100px;
+    margin-top: 10px;
+    color: rgb(145,148,139); 
+}
+.lastH2{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;   
+}
+b{
+    font-weight: bolder;
 }
