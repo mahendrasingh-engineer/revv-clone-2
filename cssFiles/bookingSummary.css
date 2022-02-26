@@ -16,17 +16,80 @@ nav>div{
     grid-template-rows: 899px;
     grid-template-areas: "a a a a a a a b b b";
     grid-gap: 10px;
+    margin: auto;
 }
-@media all and (max-width: 600px){
+@media all and (max-width: 790px){
     #topDiv{
         display: grid;
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:repeat(2,100%);
         grid-template-rows: 2fr;
-        grid-template-areas: "a"
-                             "b";
+        grid-template-areas: "a" "b";
         grid-gap: 10px;
-        margin-left: 30px;
+        width: 100%;
     }
+    #topLeft > div:nth-child(2){
+        display: none;
+    }
+    #cityService{
+        display: block;
+    }
+    #cityService>div{
+        width: 100%;
+        display: block;
+    }
+    #view > div:nth-child(3){
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #midFoter>#midDivFot{
+        display: none;
+        height: 700px;
+    }
+    #firstFoter>#cityService{
+        display: none;
+    }
+    
+}
+@media all and (max-width: 450px){
+    #topDiv{
+        display: grid;
+        grid-template-columns:repeat(2,100%);
+        grid-template-rows: 2fr;
+        grid-template-areas: "a" "b";
+        grid-gap: 10px;
+        width: 100%;
+    }
+    #topLeft > div:nth-child(2){
+        display: none;
+    }
+    #cityService{
+        display: block;
+    }
+    #cityService>div{
+        width: 100%;
+        display: block;
+    }
+    #topLeft>div:nth-child(1)>#view{
+        width: 100%;
+        margin: auto;
+        height: 95%;
+    }
+    #topLeft>div:nth-child(1)>#booking{
+        width: 100%;
+        margin: auto;
+        height: 95%;
+    }
+    #view > div:nth-child(3){
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #topLeft > div:nth-child(1){
+        flex-direction: column;
+        width: 100px;
+        padding: 0px;
+    }
+    
 }
 #topLeft{
     width: auto;
@@ -73,12 +136,12 @@ nav>div{
     font-weight: 100;
 }
 #topLeft>div:nth-child(1)>div:nth-child(1){
-    width: 22%;
+    width: 30%;
     margin: auto;
     height: 95%;
 }
 #topLeft>div:nth-child(1)>div:nth-child(2){
-    width: 64%;
+    width: 60%;
     margin: auto;
     height: 95%;
 }
@@ -168,7 +231,7 @@ div>b,b>span{
     border: none;
 }
 #bill>tr>td{
-    padding: 5px;
+    padding: 1px;
     vertical-align: top;
     color: red;
 }
@@ -181,14 +244,14 @@ div>b,b>span{
     height: 35px;
 }
 #bill > tbody > tr > td:nth-child(2){
-    /* text-align: right; */
+    text-align: right;
 }
 #bill > tbody > tr > td:nth-child(2){
-    min-width: 200px;
+    min-width: 100px;
 }
 #bill{
     font-size: 13px;
-    width: 100%;
+    width: 80%;
     font-weight: 100;
     font-family: sans-serif;
     border-spacing: 2px;
