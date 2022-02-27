@@ -5,6 +5,25 @@ var dayDuration = JSON.parse(localStorage.getItem("dayDuration01"));
 console.log(dayDuration);
 
 
+document.querySelector("#selectCity").value = JSON.parse(localStorage.getItem("cityName001"));
+
+let date1 = dayDuration.date1;
+let date2 = dayDuration.date2;
+
+document.querySelector("#timeSt").innerHTML=date1;
+document.querySelector(".endDate001").innerHTML=date2;
+
+document.querySelector("#downNav > div:nth-child(4)").addEventListener("click",function()
+{
+      window.location.href="index.html";
+})
+
+
+
+
+
+
+
 function displayCar(cars)
 {
       document.getElementById("container").innerHTML="";
@@ -142,7 +161,7 @@ function displayCar(cars)
 
         mainDiv.append(name,img,typeMainDiv,priceTypeMainDiv,extraChargeDiv);
 
-      if(ele.duration<=dayDuration.day)
+      if(ele.duration>=dayDuration.day)
       {
         document.getElementById("container").append(mainDiv);
       }
@@ -242,7 +261,7 @@ function addCar(ele)
 {
   newArr.push(ele);
   localStorage.setItem("unBoxData",JSON.stringify(newArr));
-  window.location.href="firstPayment.html";
+  window.location.href="bookingSummary.html";
 }
 
 
