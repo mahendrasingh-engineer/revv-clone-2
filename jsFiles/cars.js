@@ -142,7 +142,7 @@ function displayCar(cars)
 
         mainDiv.append(name,img,typeMainDiv,priceTypeMainDiv,extraChargeDiv);
 
-      if(ele.duration<=dayDuration)
+      if(ele.duration<=dayDuration.day)
       {
         document.getElementById("container").append(mainDiv);
       }
