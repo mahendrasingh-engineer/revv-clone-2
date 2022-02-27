@@ -410,12 +410,12 @@ function updateFirst()
 
 
 
-
 // document.getElementById("filter").addEventListener("click",menuBtn);
 // var btn2 = true;
 // function menuBtn()
 // {
-
+//    if(document.querySelector("body").style.width <="400px")
+//    {
 //     if(btn2)
 //     {
 //       document.getElementById("filter").style.display="block";
@@ -425,8 +425,8 @@ function updateFirst()
 //       document.getElementById("filter").style.display="none";
 //       btn2=true;
 //     }
-    
 
+//   }
 
 //   }
  

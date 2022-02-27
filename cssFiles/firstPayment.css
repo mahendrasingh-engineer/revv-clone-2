@@ -737,7 +737,7 @@ body{
         width: 100%; 
         margin: 10px;
         /* background-color: rgb(245, 241, 241); */
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
     #cars{
         width: 100%;
@@ -753,8 +753,8 @@ body{
       
       }
       #cars>div img{
-          height: 204px;
-          width: 300px;
+          height: 234px;
+          width: 350px;
           margin-top: 30px;
       }
       .arrow-right{
@@ -1394,8 +1394,9 @@ body{
     #mainContainer{
         display: flex;
         justify-content: space-around;
-        width: 190%;
+        width: 100%;
         height: auto;
+        flex-direction: column;
         margin: auto;
         margin-top: 5px;
     }
@@ -1413,8 +1414,8 @@ body{
 
     #carContainer{
         height: 100%;
-        width: 55%;
-        border: 1px solid red;
+        width: 100%;
+        /* border: 1px solid red; */
     }
 
     #carDetail{
@@ -1436,8 +1437,8 @@ body{
       
       }
       #cars>div img{
-          height: 180px;
-          width: 250px;
+          height: 250px;
+          width: 350px;
           margin-top: 30px;
           margin-left: 50px;
       }
@@ -1465,7 +1466,7 @@ body{
     }
 
       #paymentContainer{
-        width: 45%;
+        width: 100%;
         height: 430;
         margin-left: 10px;
         /* display: none; */
@@ -1498,12 +1499,12 @@ body{
     margin-left: 20px;
     margin-top: 20px;
     font-weight: 900;
-    font-size: 24   px;
+    font-size: 28px;
 }
 #firstP{
    padding-left: 20px;
    margin-bottom: 5px;
-   font-size: 14px;
+   font-size: 16px;
    
 }
 
@@ -1514,47 +1515,47 @@ body{
 .PTag{
     margin-top: -20px;
     color: black;
-    font-size: 12px;
+    font-size: 16px;
 }
 .mon{
     margin-top: -5px;
     color: black;
-    font-size: 12px;
+    font-size: 16px;
 }
 .LTag{
     margin-top: -20px;
     color: rgb(255, 246, 246);
-    font-size: 12px;
+    font-size: 16px;
 }
 .Lmon{
     margin-top: -5px;
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 16px;
 }
 #perMonth{
-    font-size: 14px;
+    font-size: 22px;
     color: grey;
 }
 #cutPrice{
     text-decoration: line-through;
-    font-size: 12px;
+    font-size: 20px;
 }
 #rupee{
     text-decoration: line-through;
-    font-size: 12px;
+    font-size: 20px;
 }
 #percent{
-    font-size: 10px;
+    font-size: 20px;
    color: #1C8FA8;
 }
 #payment{
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 900;
     margin-top: 10px;
     margin-left: 20px;
 }
 #tax{
-    font-size: 10px;
+    font-size: 15px;
     margin-top: -5px;
     margin-left: 23px;
     
@@ -1573,23 +1574,23 @@ body{
 
 }
 #expected{
-    font-size: 9    px;
+    font-size: 13px;
     margin-left: 30px;
 
 }
 #delivery{
-    font-size:10px;
+    font-size:13px;
     margin-left:20px;
     
 }
 #del{
-    font-size: 10px;
+    font-size: 13px;
     color: #1B1C24;
     font-weight: 600;
     margin-left:30px;
 }
 #status{
-    font-size: 9px;
+    font-size: 13px;
     text-align: left;
     color: #f7c31a;
     margin-left: 30px;
@@ -1636,20 +1637,20 @@ body{
 }
 #callImage{
     margin-right: 20px;
-    width: 10px;
-    height: 12px;
+    width: 20px;
+    height: 16px;
 }
 #call>p{
     color: #1CABA2;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 
 
 #logoImage1{
     height:40px;
-     margin-left: 5px; 
+     margin-left: 40px; 
      margin-top: 10px;
      position: relative;
      
@@ -1657,14 +1658,14 @@ body{
 
 
 #sanitisedL{
-    margin-top:45px; 
-    margin-left: 20px; 
-    font-size: 7px; 
+    margin-top:38px; 
+    margin-left: 65px; 
+    font-size: 12px; 
     font-family: 'Poppins';
      position: absolute;
 }
 .break{
-    margin-left: -40px;
+    margin-left: 10px;
 }
 
 .logo {
@@ -1684,7 +1685,7 @@ body{
 
 .title {
     color: black;
-    font-size: 15px;
+    font-size: 19px;
     font-family: Arial;
     padding-left: 10px;
     float: left;
@@ -1693,18 +1694,18 @@ body{
 
 .title_1 {
     color: rgb(174,174,174);
-    font-size: 10px;
+    font-size: 15px;
     font-weight: lighter;
     font-family: Arial;
     padding-left: 5px;
     float: left;
-    padding-top: 18px;
+    padding-top: 23px;
 }
 
 .menu {
-    width: 600px;
+    width: 100px;
     float: left;
-    height: 70px;
+    height: 80px;
     
 }
 
@@ -1737,8 +1738,9 @@ body{
 }
 
 .menu>ul li img {
-    margin-right: 5px;
+    margin-right: 15px;
     margin-top: 5px;
+
 }
 
 
@@ -1772,6 +1774,7 @@ body{
 #buysub{
     margin-top: 60px;
     font-weight: 900;
+    display: none;
     margin-left: 20px;
     font-size: 18px;
     margin-bottom: 40px;
@@ -1780,6 +1783,7 @@ body{
 #buyAndSub{
     display: flex;
     margin-top: 20px;
+    display: none;
     height: 150px;
 }
 
@@ -1787,10 +1791,12 @@ body{
     margin-left: 10px;
     margin-top: 6px;
     line-height: 20px;
+    display: none;
 }
 #firstBuySub>p{
     width: 150%;
     border-top: 1px solid rgb(192, 190, 190);
+    display: none;
     font-size: 12px;
 }
 #secondBuySub{
@@ -1798,6 +1804,7 @@ body{
     margin-left: 30px;
     margin-top: -30px;
     text-align: center;
+    display: none;
     line-height: 20px;
     height: 120px;
     background-color: #fff;
@@ -1809,25 +1816,30 @@ body{
 #secondBuySub img{
       width: 10px;
       height: 15px;
+      display: none;
       
      
 }
 #secondBuySub>p{
     font-size: 9px;
+    display: none;
 }
 #thirdBuySub{
     margin-top: -30px;
     text-align: center;
     line-height: 20px;
+    display: none;
     
 }
 #thirdBuySub img{
     width: 10px;
       height: 15px;
+      display: none;
 
 }
 #thirdBuySub>p{
     font-size: 10px;
+    display: none;
 }
 #viewButton{
        width: 70px;
@@ -1838,69 +1850,82 @@ body{
        border: 1px solid rgb(199, 199, 199);
        font-weight: 600;
        margin-left: 20px;
+       display: none;
 }
-
-
+ 
 #insurance{
-    display: flex;
-    justify-content: left;
-    margin-top: 20px;
+    display: none;
 }
+
 #insiH1{
     font-size: 15px;
     margin-top: 10px;
+    display: none;
 }
 #insurance2
 {
     margin-left: 10px;
+    display: none;
 }
 #insurance2 p{
     font-size: 14px;
+    display: none;
 }
 
 #maintain{
     display: flex;
     margin-top: 20px;
     font-size: 15px;
+    display: none;
 
 }
 #maintain2{
     margin-left: 10px;
+    display: none;
 }
 #maintain3{
     margin-left: 10px;
+    display: none;
 }
 #pInso{
     font-size: 15px;
+    display: none;
 }
 
 #pMain{
     margin-top: 20px;
     font-size: 15px;
+    display: none;
 }
 #normal{
     display: flex;
     margin-top: 20px;
     font-size: 15px;
+    display: none;
 }
 #normal2{
     margin-left: 20px;
+    display: none;
 }
 #normal3{
     margin-left: 20px;
+    display: none;
 }
 
 #normalV{
     display: flex;
     margin-top: 20px;
+    display: none;
     font-size: 15px;
 }
 #normalV3{
     margin-left: 20px;
+    display: none;
 }
 
 #normalV2{
     margin-left: 60px;
+    display: none;
 }
 .pT{
     font-size: 12px;
@@ -1920,6 +1945,7 @@ body{
     font-size: 12px;
     margin-left: 20px;
     font-weight: 900;
+    display: none;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -1934,13 +1960,13 @@ body{
     margin-top: 10px;
     border-radius: 20px;
     border: none;
-    width:200px; 
-    height:100px;
+    width:350px; 
+    height:150px;
 }
 
 #blueH{
     margin-top: 20px;
-    margin-left: 35px;
+    margin-left: 105px;
     color: white;
     font-size: 20px;
     
@@ -1953,7 +1979,6 @@ body{
 #midFoter{
     width: 100%;
     margin-top:-25px;
-    height: 350px;
     display: none;
 }
 #sani{
@@ -1963,7 +1988,7 @@ body{
 }
 #sani1
 {
- margin-left: 30px
+ margin-left: 110px
  
 }
 #sani1,#sani2,#sani3 p{
@@ -1971,10 +1996,10 @@ body{
 }
 
 #sani2{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 #sani3{
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 
