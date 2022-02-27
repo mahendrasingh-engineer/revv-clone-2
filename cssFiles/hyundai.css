@@ -47,7 +47,7 @@
     overflow-x: hidden;
 }
 
-.selectCity{
+#selectCity{
    margin-left: 20px;
    color: #384150;
    font-family: 'Poppins', sans-serif;
@@ -56,7 +56,7 @@
 .crossIcon{
     margin-right: 20px;
 }
-.fa-xmark{
+.crossIcon img{
     font-size: 20px;
     color: #868B9A;
 }
@@ -93,10 +93,45 @@
     font-weight: 600;
     padding: 12px 56px 12px 16px;
 }
-
+#topCities div img {
+    width: 15px;
+    height: 12px;
+    display: none;
+}
+#otherCities div img {
+    width: 15px;
+    height: 12px;
+    display: none;
+}
 #topCities>div:hover{
     color: #21C0C0;
     background-color:#E6F8F8
+}
+
+#topCities i {
+    display: none;
+}
+
+.selected-city {
+    background-color: #E6F8F8;
+    padding-right: 10px;
+}
+
+.selected-city .topCity {
+    color: #0EBABA;
+}
+
+.selected-city .otherCity {
+    font-weight: bold;
+    color: #0EBABA;
+}
+
+.selected-city i {
+    display: block!important;
+}
+
+#otherCities i {
+    display: none;
 }
 
 #secondBox{
@@ -135,6 +170,7 @@
     background-color: white;
     position: fixed;
     top: 0;
+    z-index: 3;
 }
 
 .logo {
@@ -330,7 +366,7 @@ ul li img {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 10000;
+    z-index: 3;
     background: #fff;
     box-shadow: 3px 3px 6px 0 rgb(0 0 0 / 16%);
     margin-top: 60px;
@@ -381,9 +417,11 @@ ul li img {
 }
 
 .search{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid grey;
     border-radius: 5px;
-    text-align: center;
     background-image: linear-gradient(to left, rgb(28, 171, 162), rgb(28, 127, 171));
     color: white;
     font-size: 18px;
@@ -471,6 +509,8 @@ ul li img {
     height: 65px;
     margin-left: 10px;
     margin-right: -10px;
+    cursor: pointer;
+    font-weight: 800!important;
 }
 
 .howItWork {

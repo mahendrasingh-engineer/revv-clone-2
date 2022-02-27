@@ -1,11 +1,78 @@
-// var selectCity = document.querySelector("#city_search");
-// selectCity.addEventListener("click",function() {
-//   var searchBox = document.querySelector("#subContainer");
-//   var container = document.querySelector("#container");
-//   searchBox.style.display="block";
-//   container.style.display="flex";
-//   container.style.backgroungcolor="rgba(0,0,0,0.3)";
-// })      
+// SELECTCITY BOX POPUP WINDOW
+
+var selectCity = document.querySelector("#city_search");
+selectCity.addEventListener("click", function () {
+  var searchBox = document.querySelector("#subContainer");
+  var container = document.querySelector("#container");
+  searchBox.style.display = "block";
+  container.style.display = "flex";
+  container.style.backgroungcolor = "rgba(0,0,0,0.3)";
+});
+var close = document.querySelector(".crossIcon>img");
+close.addEventListener("click", function () {
+  var searchBox = document.querySelector("#subContainer");
+  var container = document.querySelector("#container");
+  searchBox.style.display = "none";
+  container.style.display = "none";
+});
+// var citiesDiv = document.querySelectorAll(".city-div");
+// console.log(citiesDiv)
+// citiesDiv.forEach(function (elem) {
+//   elem.addEventListener("click", function () {
+//     var cityText = document.querySelector("#city-search");
+//     // console.log(cityText.innerText);
+//     var check = document.querySelectorAll("#topCities>div>img");
+//     var citySpan = document.querySelector(".citySpan");
+//     check.forEach(function (data) {
+//       data.classList.remove("active");
+//     });
+//     cityText.innerText = event.target.innerText;
+//     citySpan.innerText = event.target.innerText;
+//     elem.querySelector("#topCities>div>img").classList.add("active");
+//   });
+// });
+
+const cities_div = document.querySelectorAll('#topCities > div');
+
+cities_div.forEach((selected_city) => {
+    selected_city.addEventListener('click', (clicked_city) => {
+        const city_name = clicked_city.target.innerText
+        // console.log(selected_city)
+        const current_selected = document.querySelector('.selected-city')
+        current_selected.classList.remove('selected-city')
+        selected_city.classList.add('selected-city');
+
+        // const searchBox = document.querySelector("#subContainer");
+        // searchBox.style.display = "none";
+        const container = document.querySelector("#container");
+        container.style.display = "none";
+
+        const city_display = document.getElementById('city_search')
+        city_display.value = city_name
+        city_display.style.color = "rgba(0, 0, 0, 0.87)"
+    })
+})
+
+const other_cities_div = document.querySelectorAll('#otherCities > div');
+
+other_cities_div.forEach((selected_city) => {
+    selected_city.addEventListener('click', (clicked_city) => {
+        const city_name = clicked_city.target.innerText
+        // console.log(selected_city)
+        const current_selected = document.querySelector('.selected-city')
+        current_selected.classList.remove('selected-city')
+        selected_city.classList.add('selected-city');
+
+        // const searchBox = document.querySelector("#subContainer");
+        // searchBox.style.display = "none";
+        const container = document.querySelector("#container");
+        container.style.display = "none";
+
+        const city_display = document.getElementById('city_search')
+        city_display.value = city_name
+        city_display.style.color = "rgba(0, 0, 0, 0.87)"
+    })
+})
 
 var searchbarContainer = document.getElementById("searchbarContainer")
         var searchBar = document.getElementById("searchBar");
