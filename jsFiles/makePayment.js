@@ -18,7 +18,7 @@ btn.addEventListener("click", function () {
     bankList.style.display = bankstr;
 });
 
-
+document.querySelector("#amount").innerHTML = "₹" + JSON.parse(localStorage.getItem("revvTotal"));
 
 
 
@@ -49,7 +49,6 @@ for (let i in bankList2) {
 
 function buyNow(ref) {
     let input0 = document.querySelectorAll("#toOpen" + ref + ">input");
-
     let asd = true;
     console.log(input0);
     for (let i in input0) {
