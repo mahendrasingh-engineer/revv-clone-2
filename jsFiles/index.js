@@ -77,15 +77,18 @@ function redirectToSignIn(){
   
 
   var duration ;
-  var searchBtn = document.querySelector("#leftContainer > div.searchBtn > button");
-  searchBtn.addEventListener("click",function() {
+  document.querySelector("#leftContainer > div.searchBtn > button").addEventListener("click",function() {
+    window.location.href="cars.html";
+  })
+  var searchBtn = document.querySelector("#cityAndTime > div.timeDiv > div.finalTime > input");
+  searchBtn.addEventListener("input",function() {
     var date = document.querySelector("#cityAndTime > div.timeDiv > div.initialTime > input").value;
     var date1 = new Date(date);
     var date2 = new Date(document.querySelector("#cityAndTime > div.timeDiv > div.finalTime > input").value);
     var dura = date2 - date1;
     dura = dura/60000;
     var day  = dura;
-    localStorage.setItem("dayDuration01",JSON.stringify(Math.floor(day/1440)));
+    localStorage.setItem("dayDuration01",JSON.stringify({day:Math.floor(day/1440),date1:date1,date2:date2}));
     duration = " " + Math.floor(dura/1440);
     dura = dura % 1440;
     duration = duration + "day " + Math.floor(dura/60)  + "hours ";
