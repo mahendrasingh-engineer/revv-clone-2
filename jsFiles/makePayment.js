@@ -46,3 +46,8 @@ for (let i in bankList2) {
         // selectedBank.value = bankList2[i].innerHTML + " bank";
     })
 }
+
+function buyNow() {
+    toSelect[j].style.display = "none";
+    document.querySelector("#buyNow").style.display = "block";
+}
