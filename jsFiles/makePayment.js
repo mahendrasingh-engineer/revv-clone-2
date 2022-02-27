@@ -47,7 +47,25 @@ for (let i in bankList2) {
     })
 }
 
-function buyNow() {
-    toSelect[j].style.display = "none";
-    document.querySelector("#buyNow").style.display = "block";
+function buyNow(ref) {
+    let input0 = document.querySelectorAll("#toOpen" + ref + ">input");
+
+    let asd = true;
+    console.log(input0);
+    for (let i in input0) {
+        console.log(input0[i] + "");
+        if (input0[i].value + "" == "") {
+            asd = false;
+            break;
+        }
+    }
+    if (asd) {
+        toSelect[j].style.display = "none";
+        document.querySelector("#buyNow").style.display = "block";
+
+    } else {
+        alert("please fill complete form");
+    }
+
+
 }
