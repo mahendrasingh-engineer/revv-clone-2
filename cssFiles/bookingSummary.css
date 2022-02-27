@@ -221,7 +221,7 @@ div>b,b>span{
     border: 0px;
     border-bottom: 1px solid green;
 }
-#apply{
+#apply,#topRight > div > button{
     border-radius: 4px;
     background-color: #0ebaba;
     color: #fff;

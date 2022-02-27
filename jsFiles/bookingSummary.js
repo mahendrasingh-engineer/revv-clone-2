@@ -1,5 +1,5 @@
 let bookedCar = JSON.parse(localStorage.getItem("bookedCar"));
-let n = bookedCar.length - 3;
+let n = bookedCar.length - 1;
 obj = {
     name: "Maruti Alto K10",
     Image: "https://s3-us-west-2.amazonaws.com/revvselfdrivecar/carImages/white_images/Altok10.png",
@@ -38,3 +38,21 @@ himage.src = obj.Image;
 hfunction0.innerText = obj.function;
 hfeulType.innerText = obj.fuel_type;
 hseat.innerText = obj.seat + " seats";
+var copied = document.querySelector("#bill > tbody > tr:nth-child(2) > td:nth-child(2)");
+copied.innerText = obj.kms_270;
+let total = +obj.kms_270 + 400;
+document.querySelector("#bill > tbody > tr:nth-child(10) > td:nth-child(2)").innerText = total;
+let promo001 = true;
+document.querySelector("#apply").addEventListener("click", function () {
+    if (document.querySelector("#promoSpace").innerText = "masai30" && promo001) {
+        total = Math.round(total * (0.7));
+        promo001 = false;
+        document.querySelector("#bill > tbody > tr:nth-child(10) > td:nth-child(2)").innerText = total;
+    } else {
+        alert("invalid promo code");
+    }
+});
+document.querySelector("#topRight > div > button").addEventListener("click", function () {
+    localStorage.setItem("revvTotal", JSON.stringify(total));
+    window.location.href = "firstPayment.html";
+});
