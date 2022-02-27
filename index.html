@@ -66,7 +66,7 @@
           <div class="locationIcon">
             <i class="fa-solid fa-location-dot"></i>
           </div>
-          <div class="cityBox">Select City</div>
+          <div class="cityBox"></div>
         </div>
         <div class="startTime">Start Time</div>
         <div class="endTime">End Time</div>
@@ -75,7 +75,7 @@
     </div>
 
     <!-- search box creation -->
-    
+
     <div id="parentAdContainer">
       <div id="advertiseContainer">
         <!-- left searchBox start  -->
@@ -102,25 +102,32 @@
             <div class="spanParent">
               Self drive car rentals in <span class="citySpan">India</span>
             </div>
-          </div>
+          </div> 
           <!-- bottom-section  -->
           <div id="cityAndTime">
-            <div class="selectcity">
+            <div id="selectcity">
               <div class="location">
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <div class="cityText">Select City</div>
             </div>
             <div class="timeDiv">
-              <div class="initialTime">Start Time</div>
-              <div class="finalTime">End Time</div>
+              <div class="initialTime">
+                Start Time
+                <input class="sTime" type="datetime-local">
+              </div>
+              <div class="finalTime">
+                End time
+                <input class="eTime"  type="datetime-local">
+              </div>
             </div>
+            <div class="duration"></div>
           </div>
           <div class="searchBtn">
             <button>Search</button>
           </div>
         </div>
-    <!-- popup window creation  -->
+        <!-- popup window creation  -->
         <div id="container">
           <div id="subContainer">
             <div id="head">
@@ -169,77 +176,77 @@
                     <div class="otherCity selected">Kolkata</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Ahemdabad</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Bhubneswar</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Chandigarh</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Coimbatore</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">jaipur</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Kochi</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Mangalore</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Mysore</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Nagpur</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Surat</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Tirupati</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Trivandrum</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Vadodara</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Vijayawada</div>
                     <i class="fa-solid fa-check"></i>
                   </div>
-      
+
                   <div class="city-div">
                     <div class="otherCity selected">Vizag</div>
                     <i class="fa-solid fa-check"></i>
@@ -272,7 +279,6 @@
               alt="rental image"
             />
           </div> -->
-          
         </div>
         <!-- right advertiseContainer end -->
       </div>
@@ -280,14 +286,17 @@
 
     <div id="midContainer">
       <div class="rental-packages senitiged-margin">
-
         <!-- featured bo creation  -->
         <div id="featuredContainer">
           <div class="header">
             <div class="title">Featured</div>
             <div class="arrowIcon">
-              <div onclick="moveLeft()"><i class="fa-solid fa-angle-left"></i></div>
-              <div onclick="moveRight()"><i class="fa-solid fa-angle-right"></i></div>
+              <div onclick="moveLeft()">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+              <div onclick="moveRight()">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
             </div>
           </div>
           <div id="discountBoxes">
@@ -644,28 +653,28 @@
             <div class="h2Tag">
               <h2>Download the Revv app</h2>
             </div>
-              <div class="techStore">
-                <div class="appStore">
-                  <a
-                    href="https://apps.apple.com/in/app/revv-self-drive-cars-delivered/id1021594400"
-                  >
-                    <img
-                      src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/downloadApp/app_store.webp"
-                      alt="appStore"
-                    />
-                  </a>
-                </div>
-                <div class="playStore">
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.selfdrive&hl=en"
-                  >
-                    <img
-                      src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/downloadApp/google_play.webp"
-                      alt="playStore"
-                    />
-                  </a>
-                </div>
+            <div class="techStore">
+              <div class="appStore">
+                <a
+                  href="https://apps.apple.com/in/app/revv-self-drive-cars-delivered/id1021594400"
+                >
+                  <img
+                    src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/downloadApp/app_store.webp"
+                    alt="appStore"
+                  />
+                </a>
               </div>
+              <div class="playStore">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.selfdrive&hl=en"
+                >
+                  <img
+                    src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/downloadApp/google_play.webp"
+                    alt="playStore"
+                  />
+                </a>
+              </div>
+            </div>
           </div>
           <div id="rightDiv">
             <div class="mobiles">
@@ -686,28 +695,40 @@
         <div id="aboutRevv">
           <div>
             <div class="emoji">
-              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/revvers.png" alt="happy revvers">
-            </div>  
+              <img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/revvers.png"
+                alt="happy revvers"
+              />
+            </div>
             <h3>1 Mn +</h3>
             <p>Happy Revvers</p>
           </div>
           <div>
             <div class="emoji">
-              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/cities.png" alt="cities">
+              <img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/cities.png"
+                alt="cities"
+              />
             </div>
             <h3>22+ cities</h3>
             <p>Across India</p>
           </div>
           <div>
             <div class="emoji">
-              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/travel.png" alt="kms">
+              <img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/travel.png"
+                alt="kms"
+              />
             </div>
             <h3>50 Mn +</h3>
             <p>Kms travelled</p>
           </div>
           <div>
             <div class="emoji">
-              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/review.png" alt="ratings">
+              <img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/ourJourney/review.png"
+                alt="ratings"
+              />
             </div>
             <h3>4.8 / 5</h3>
             <p>20K+ reviewers</p>
@@ -723,33 +744,146 @@
         <div id="investors">
           <div>
             <div class="companyLogo">
-              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/hyundai.webp" alt="hyundai logo">
+              <img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/hyundai.webp"
+                alt="hyundai logo"
+              />
             </div>
             <div class="textContent">Hyundai Motor Company</div>
           </div>
           <div>
             <div class="companyLogo">
-              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/edelweissFinancialServices.webp" alt="Edelweiss">
+              <img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/edelweissFinancialServices.webp"
+                alt="Edelweiss"
+              />
             </div>
             <div class="textContent">Edelweiss Financial Services</div>
           </div>
           <div>
             <div class="companyLogo">
-              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/dreamIncubator.webp" alt="dream incubator">
+              <img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/dreamIncubator.webp"
+                alt="dream incubator"
+              />
             </div>
             <div class="textContent">Dream Incubator</div>
           </div>
           <div>
             <div class="companyLogo">
-              <img src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/beenext.webp" alt="Beenext">
+              <img
+                src="https://www.revv.co.in/assets/RentalImages/HomeScreen/rental2021/investors/beenext.webp"
+                alt="Beenext"
+              />
             </div>
             <div class="textContent">Beenext</div>
           </div>
         </div>
       </div>
+
+      <!-- First Footer creation  -->
+
+      <div id="firstFoter">
+        <h4>Serviceable Cities</h4>
+        <div id="cityService">
+          <div>
+            <p><a href="">Car Rental in Bangalore</a></p>
+            <p><a href="">Car Rental in Hyderabad</a></p>
+            <p><a href="">Car Rental in Mumbai</a></p>
+            <p><a href="">Car Rental in Delhi-NCR</a></p>
+            <p><a href="">Car Rental in Chennai</a></p>
+            <p><a href="">Car Rental in Pune</a></p>
+            <p><a href="">Car Rental in Kolkata</a></p>
+            <p><a href="">Car Rental in Ahmedabad</a></p>
+          </div>
+          <div>
+            <p><a href="">Car Rental in Bhubaneswar</a></p>
+            <p><a href="">Car Rental in Chandigarh</a></p>
+            <p><a href="">Car Rental in Coimbatore</a></p>
+            <p><a href="">Car Rental in Jaipur</a></p>
+            <p><a href="">Car Rental in Kochi</a></p>
+            <p><a href="">Car Rental in Mangalore</a></p>
+            <p><a href="">Car Rental in Mysore</a></p>
+            <p><a href="">Car Rental in Nagpur</a></p>
+          </div>
+          <div>
+            <p><a href="">Car Rental in Surat</a></p>
+            <p><a href="">Car Rental in Tirupati</a></p>
+            <p><a href="">Car Rental in Trivandrum</a></p>
+            <p><a href="">Car Rental in Vadodara</a></p>
+            <p><a href="">Car Rental in Vijayawada</a></p>
+            <p><a href="">Car Rental in Vizag</a></p>
+          </div>
+        </div>
+      </div>
+
+        <!-- Midddle foter creation  -->
+        <div id="midFoter">
+          <div id="midDivFot">
+            <div id="firstDiv">
+              <img
+                src="https://www.revv.co.in/grapheneImages/newopen/logo.svg"
+                id="revLogo"
+                alt=""
+              />
+              <br />
+              <br />
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/revvindia"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/revv_india?lang=en"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/revv_india/?hl=en"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCdASUGQcRPefuQYO6rT331Q"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/revv-self-drive-car/?originalSubdomain=in"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul id="secondDiv">
+                <li><a href="">Home</a></li>
+                <li><a href="">Subscriptions</a></li>
+                <li><a href="">Traffis</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Policy</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
+            <div id="thirdDiv">
+              <h3 id="h3">Have Questions?</h3>
+              <h4 id="h4">24/7 Customer Support</h4>
+              <br />
+              <h2 id="contact">Contact us</h2>
+              <h2 id="h2">+91-8700459092</h2>
+              <h2 id="h2">care@revv.co.in</h2>
+            </div>
+          </div>
+          <p id="pLine">
+            © 2022 Primemover Mobility Technologies Pvt Ltd. All rights reserved
+          </p>
+        </div>
     </div>
   </body>
 
-
+  <script src="./Data/carData.js"></script>
   <script src="jsFiles/index.js"></script>
 </html>
