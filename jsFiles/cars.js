@@ -261,7 +261,7 @@ function addCar(ele)
 {
   newArr.push(ele);
   localStorage.setItem("unBoxData",JSON.stringify(newArr));
-  window.location.href="bookingSummary.html";
+  window.location.href="firstPayment.html";
 }
 
 
