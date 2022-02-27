@@ -99,11 +99,23 @@ function redirectToSignIn(){
     document.querySelector(".duration").style= "color:red;text-align:center;padding:30px 20px";
 
     var get = JSON.parse(localStorage.getItem("carDataBase"));
-    console.log(get);
-    
+    var day1001 = JSON.stringify(date1).split("T");
+    day1001[1] = day1001[1].split(".");
+    document.querySelector("#searchBar > div.startTime").innerText = document.querySelector("#searchBar > div.startTime").innerText + ":" + day1001[0] + " " + day1001[1][0];
+    day1001 = JSON.stringify(date2).split("T");
+    day1001[1] = day1001[1].split(".");
+    document.querySelector("#searchBar > div.endTime").innerText = document.querySelector("#searchBar > div.endTime").innerText + ":" + day1001[0] + " " + day1001[1][0];
   })
   var endTime = document.querySelector(".initialTime");
   endTime.addEventListener("click",function() {
     document.querySelector(".eTime").style.display="block";
   })
  
+  var cityName001 = document.querySelectorAll("#topCities > div")   
+  cityName001.forEach(function(elem) {
+    elem.addEventListener("click",function() {
+      localStorage.setItem("cityName001",JSON.stringify(elem.innerText));
+      let str001 = document.querySelector("#searchBar > div.city.city-box").innerHTML
+      document.querySelector("#searchBar > div.city.city-box").innerHTML=str001 + elem.innerText;
+    })
+  })
