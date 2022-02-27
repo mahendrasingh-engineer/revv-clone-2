@@ -1,6 +1,7 @@
 // SELECTCITY BOX POPUP WINDOW
 
 var selectCity = document.querySelector("#city_search");
+var selectCityNav = document.querySelector(".cityBox");
 selectCity.addEventListener("click", function () {
   var searchBox = document.querySelector("#subContainer");
   var container = document.querySelector("#container");
@@ -18,6 +19,30 @@ close.addEventListener("click", function () {
   searchBox.style.display = "none";
   container.style.display = "none";
   overlay.style.zIndex = 1;
+});
+selectCityNav.addEventListener("click", function () {
+var searchBox = document.querySelector("#subContainer");
+var container = document.querySelector("#container");
+let overlay = document.querySelector(".explorer");
+searchBox.style.display = "block";
+container.style.display = "flex";
+container.style.backgroungcolor = "rgba(0,0,0,0.3)";
+overlay.style.zIndex = -1;
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+});
+var close = document.querySelector(".crossIcon>img");
+close.addEventListener("click", function () {
+var searchBox = document.querySelector("#subContainer");
+var container = document.querySelector("#container");
+searchBox.style.display = "none";
+container.style.display = "none";
+});
+
+var searchNav = document.querySelector(".search");
+searchNav.addEventListener("click", function () {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 // var citiesDiv = document.querySelectorAll(".city-div");
 // console.log(citiesDiv)
