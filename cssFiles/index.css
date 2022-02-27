@@ -26,6 +26,11 @@
     margin-left: 100px;
 }
 
+.logoText{
+    color: black;
+    margin-left: 20px;
+}
+
 #right{
     display: flex;
     justify-content: flex-end;
@@ -191,11 +196,6 @@
     text-align: center;
     background-color: white;
     border-radius: 12px;
-    /* height: 60px; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .rentals>h3{
@@ -991,9 +991,22 @@ h3{
     #right>div{
         margin: 0 10px;
     }
-    /* #leftContainer{
-        
-    } */
+    
 }
+@media all and (max-width: 768px) {
+    #headerContainer{
+        margin-bottom: 10px;
+    }
+    
+    #left {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        /* align-items:center; */
+    }
 
+    #right{
+        display: none;
+    }
+}
 

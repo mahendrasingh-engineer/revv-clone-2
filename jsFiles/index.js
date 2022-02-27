@@ -51,28 +51,11 @@ function redirectToSignIn(){
   secondwindow =open('signIn.html', 'yahoo', 'left=500px,top=500px,height=500,width=360,scrollbars=yes');
 }
 
-// var startTime = document.querySelector(".initialTime");
-// var finalTime = document.querySelector(".finalTime");
-// startTime.addEventListener("click",function() {
-//   document.querySelector("input").style.display="inline-block";
-// })
-// finalTime.addEventListener("click",function() {
-//   document.querySelector("input").style.display="inline-block";
-// })
 
-// startTime.addEventListener("click",function() {
-  //   console.log("here")
-  //   startTime.innerHTML = "<input type='datetime-local' />";
-  // })
-  
   var startTime = document.querySelector(".initialTime");
   startTime.addEventListener("click",function() {
     document.querySelector(".sTime").style.display="block";
-    // var date = document.querySelector("#cityAndTime > div.timeDiv > div.initialTime > input").value;
-    // date = date.split("T");
-    // date[0] = date[0].split("-").map(Number);
-    // date[1] = date[1].split(":").map(Number);
-    // console.log(date);
+    
   })
   
 
