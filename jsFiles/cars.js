@@ -1,7 +1,9 @@
 var cars = JSON.parse(localStorage.getItem("carDataBase"));
 
-  console.log(cars[2]);   
-console.log(cars);
+var dayDuration = JSON.parse(localStorage.getItem("dayDuration01"));
+
+console.log(dayDuration);
+
 
 function displayCar(cars)
 {
@@ -140,8 +142,12 @@ function displayCar(cars)
 
         mainDiv.append(name,img,typeMainDiv,priceTypeMainDiv,extraChargeDiv);
 
-
+      if(ele.duration<=dayDuration)
+      {
         document.getElementById("container").append(mainDiv);
+      }
+
+        
            
     });
  
