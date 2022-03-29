@@ -651,4 +651,211 @@ h3{
     font-size: 14px;
     font-weight: bold;
     
+<<<<<<< Updated upstream
 }
+=======
+}
+
+/* first foter style  start*/
+#firstFoter{
+    width: 80%;
+    margin: auto;
+    background-color: #2A2B36;
+    /* padding-top: 20px;
+    margin-top: 50px; */
+    border-radius: 12px;
+}
+#cityService
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+#cityService > div > p{
+    margin: 5px 0;
+}
+
+#cityService a{
+    text-decoration: none;
+    color: #89898F;
+    font-size: 13px;
+    font-family: 'poppins';
+}
+#cityService>div a:hover{
+    color: #0EBABA;
+}
+#cityService p{
+    text-align: left;
+    text-align: justify;
+    margin-top: 0px;
+}
+/* #cityService>div{
+    margin-top: 15px;
+    padding-top: 60px;
+} */
+#firstFoter>h4{
+    text-align: left;
+    /* margin-bottom: -50px; */
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 98px;
+    font-family: 'poppins';
+    font-size: 28px;
+    color: #FFFF;
+}
+
+/* middle fotter creation */
+
+#midFoter{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 12px ;
+    overflow: hidden;
+}
+#midDivFot
+{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    /* height: 100%; */
+    justify-content: space-around;
+    align-items: center;
+    background-color: #494E5A;
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+
+.fab{
+    padding-left: 10px;
+}
+#midDivFot>div:nth-child(1){
+    width: 30%;
+    height: 80%;
+    text-align: left;
+}
+#midDivFot>div:nth-child(2){
+    width: 20%;
+    height: 80%;
+}
+#midDivFot>div:nth-child(3){
+    width: 30%;
+    height: 80%;
+}
+
+#firstDiv li{
+    list-style: none;
+    
+}
+#firstDiv ul{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+
+}
+#firstDiv ul a{
+    margin-right: 5px;
+    
+}
+#firstDiv i{
+    font-size:28px;
+    width: 40px;
+    height: 35px;
+    padding-top: 5px;
+    border-radius: 50px;
+    background-color:#0EBABA;
+    color: #ffff;
+} 
+#firstDiv>img{
+    width: 105px;
+    height: 75px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+#secondDiv li{
+    list-style: none;
+
+}
+#secondDiv>li:first-child{
+    margin-top: 20px;
+}
+#secondDiv a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'poppins';
+    font-size: 17px;
+    
+}
+#secondDiv a:hover{
+    color: #0EBABA;
+}
+#secondDiv li{
+    text-align: justify;
+    margin-left: 80px;
+}
+#thirdDiv{
+    margin-top: 15px;
+}
+#h3,#h4{
+    color: #FFF;
+    font-family: 'poppins';  
+    text-align: justify;
+    margin-left: 40px;
+}
+#h4{
+    font-weight: lighter;
+}
+#h2{
+    color: #0EBABA;
+    font-family: 'poppins';  
+    text-align: justify;
+    margin-left: 40px;
+}
+#contact{
+    color: #0EBABA;
+    font-family: 'poppins';  
+    text-align: justify;
+    margin-left: 40px;  
+}
+#contact:hover
+{
+    text-decoration: underline;
+}
+#pLine{
+    text-align: left;
+    margin-top: -35px;
+    margin-left: 95px;
+    color: #fff;
+    font-size: 10px;
+    font-family: 'poppins';
+}
+/* first foter  style end  */
+
+@media all and (min-width: 768px) and (max-width: 992px){
+    #right>div{
+        margin: 0 10px;
+    }
+    
+}
+@media all and (max-width: 768px) {
+    #headerContainer{
+        margin-bottom: 10px;
+    }
+
+    #left {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        /* align-items:center; */
+    }
+
+    #right{
+        display: none;
+    }
+
+    
+}
+
+>>>>>>> Stashed changes
